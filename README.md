@@ -19,6 +19,9 @@ HifzTech is a cutting-edge web application designed to revolutionize the way stu
 
 ## 💡 Use Case
 Designed specifically for Islamic educational centers and independent students looking for a focused, distraction-free environment to revise Juz'u Amma.
+## 🔗 Live Demo
+Check out the live app here: (https://juzuamma.netlify.app)
+
 
 ---
 **Developed by Dan Abbas | HifzTech Studio**
