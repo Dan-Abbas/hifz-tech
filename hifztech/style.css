@@ -1,0 +1,566 @@
+/* Wannan shi ne babban bangon da zai rufe shafin */
+/* 1. Gyaran :root (Dole ya zauna shi kadai) */
+/* 1. CSS VARIABLES & BASE */
+    :root {
+      --main: #3fb950;
+      --main2: #58a6ff;
+      --bg: #0d1117;
+      --card-bg: rgba(22, 27, 34, 0.8);
+      --gold: #f1c40f;
+      --red: #ff4d4d;
+      --purple: #d2a8ff;
+      --orange: #ff9f43;
+      --cyan: #00d2d3;
+      --deep-green: #1b4d3e;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Loader Wrapper */
+/* 1. Babban Bangon Loader */
+.loader-wrapper {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #0d1117;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    z-index: 10000;
+    /* Bacewa cikin santsi */
+    animation: bacewa 0.8s ease-in 3.5s forwards; 
+}
+
+/* 2. Loader Mai Kalar Cyan/Green Gradient */
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 3px solid transparent;
+    border-top: 3px solid var(--cyan);
+    border-right: 3px solid var(--main); /* Green */
+    border-radius: 50%;
+    animation: juyawa 1s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+    box-shadow: 0 0 20px rgba(0, 210, 211, 0.2);
+}
+
+/* 3. Rubutu Mai Walƙiya (Neon Glow) */
+.loader-title {
+    margin-top: 30px;
+    letter-spacing: 7px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    animation: haske-text 2s ease-in-out infinite;
+}
+
+.loader-title span {
+    color: var(--main);
+    font-weight: 900;
+}
+
+.loader-subtitle {
+    margin-top: 10px;
+    color: var(--cyan);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+/* 4. Animations */
+@keyframes juyawa {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes haske-text {
+    0%, 100% { text-shadow: 0 0 10px rgba(255,255,255,0.2); opacity: 0.8; }
+    50% { text-shadow: 0 0 25px var(--cyan); opacity: 1; }
+}
+
+@keyframes bacewa {
+    to { opacity: 0; visibility: hidden; transform: scale(1.1); }
+}
+
+
+
+/* 1. Tsarin Gaba Daya (General Setup) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  
+}
+
+body {
+    background: radial-gradient(circle at 0% 0%, rgba(63, 185, 80, 0.15) 0%, transparent 35%),
+                radial-gradient(circle at 100% 0%, rgba(88, 166, 255, 0.15) 0%, transparent 35%),
+                #0d1117; /* Tushen baƙi don rubutu ya fito radau */
+    height:auto;
+    display: block;
+    flex-direction: column;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* 2. Glassmorphism Navbar (Kamar Gilashi) */
+/* 3. MODERN FLOATING NAVBAR */
+    header { position: sticky; top: 15px; z-index: 999; padding: 0 10%; }
+    .modern-nav {
+      background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 50px;
+      display: flex; justify-content: space-between; align-items: center; padding: 12px 50px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    }
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: var(--main); /* Kalar Cyber Green dinmu */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--main2);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover Effect: Layi mai haske a kasa */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--main);
+    box-shadow: 0 0 10px var(--main);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Button na musamman a Navbar */
+.btn-contact {
+    background: var(--main);
+    color: black !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 700 !important;
+    box-shadow: 0 0 15px rgba(63, 185, 80, 0.4);
+}
+
+.btn-contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(63, 185, 80, 0.6);
+}
+
+  /* HERO SECTION */
+.hero-text {
+    text-align: center; 
+    padding: 100px 20px 50px;
+    background: radial-gradient(circle at center, rgba(63, 185, 80, 0.05), transparent 70%);
+}
+
+.hero-text h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem); /* Mun kara girma kadan */
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -1px; /* Salon zamani na matse rubutu kadan */
+    
+    /* Gradient Text */
+    background: linear-gradient(135deg, #ffffff, var(--main) 60%, var(--main2) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Animation mai santsi don gradient din ya rika yawo */
+    animation: shine-text 5s linear infinite;
+}
+
+.hero-text p { 
+    color: #8b949e; /* Mun sa kalar da ba ta gajiyar da ido */
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgb(0,0,0);
+
+}
+
+/* Animation na Gradient din h1 */
+@keyframes shine-text {
+    to { background-position: 200% center; }
+}
+
+
+
+main {
+    padding-top: 40px; /* Sarari tsakanin Header da Katuna */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.card-section {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;  
+    padding: 20px 5% 60px;
+
+}
+
+
+/* Gyara Girman Katin domin ya dauki sura daya * Gyara Girman Katin domin ya dauki sura daya  Gyara Girman Katin domin ya dauki sura daya */
+
+.sura-scroll {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Don ya fara daga sama saboda tsawo */
+    text-align: left; /* Hausa tana farawa daga hagu */
+}
+
+.translation-header {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: rgba(0,0,0,0.5); /* Inuwa kadan a kan kalar katin */
+    margin-bottom: 15px;
+    font-weight: 900;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.hausa-text {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #000;
+    font-weight: 500;
+}
+
+.aya-num {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    font-size: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    font-weight: 900;
+}
+
+.hifz-card.full-sura {
+    width: 90%;
+    height: 200px;
+}
+
+.arabic-text-full {
+    font-family: 'Amiri', serif;
+    font-size: 1.8rem;
+    font-weight: 1000;
+    line-height: 2.1;
+    text-align: center;
+    direction: rtl;
+    padding: 10px;
+    background: linear-gradient(135deg, #3fb950, #58a6ff, #d2a8ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sura-scroll {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main) transparent;
+}
+
+.sura-title {
+    color: var(--main2);
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+/* Gyara Girman Katin domin ya dauki sura daya * Gyara Girman Katin domin ya dauki sura daya  Gyara Girman Katin domin ya dauki sura daya */
+
+/* 3. The 3D Cyber-Card */
+.hifz-card {
+    width: 350px;
+    height: 200px;
+    perspective: 1000px; /* Hangen nesa na 3D */
+     animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* 2. "Floating" Animation na Katuna */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity:1; transform: translateY(0); }
+}
+
+
+/* card inner iphone style */
+.card-inner {
+      position: relative; width: 100%; height: 100%; display: flex; position: relative;
+      transform-style: preserve-3d; transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer; gap: 5px;
+    }
+
+.hifz-card .card-inner {
+    transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.55);
+}
+
+.hifz-card:active .card-inner {
+    transform: scale(0.95) rotateY(180deg); /* Katin zai ɗan matse (press effect) */
+}
+
+
+.hifz-card:hover .card-inner {
+    transform: rotateY(180deg);
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Boye dayan bangon idan an juya */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: rgba(22, 27, 34, 0.9); /* Duhu kadan don kariya ga rubutu */
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.card-front {
+    background: black;
+    border: 2px solid var(--main);
+}
+
+.card-back { 
+     background: var(--main);
+     color: #000; 
+     transform: rotateY(180deg); 
+     text-align: center;
+     font-weight: 700; }
+
+.small-text {
+    font-size: clamp(1.4rem, 4.5vw, 1.8rem) !important;
+    line-height: 2; /* Mun ƙara sararin layi don haruffan su buɗe */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+
+
+.arabic-text {
+    font-family: 'Amiri', serif; 
+    /* 2. Girman Rubutu */
+    font-size: clamp(1.7rem, 4vw, 1.8rem); 
+    line-height: 1.8; 
+    font-weight: 700;
+    background: linear-gradient(135deg, #3fb950, #58a6ff, #d2a8ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    direction: rtl;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Domin ya zauna a tsakiyar katin */
+    filter: drop-shadow(0 0 10px rgba(63, 185, 80, 0.4));
+}
+
+/* Kwarin gwiwa: gyara wa small shima */
+small {
+    font-size: 0.9rem;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2px;
+}
+
+/* 7. COLOR CODES */
+    .card-gold .card-front { border-color: var(--gold); } .card-gold .card-back { background: var(--gold); }
+    .card-red .card-front { border-color: var(--red); } .card-red .card-back { background: var(--red); color: white; }
+    .card-blue .card-front { border-color: var(--main2); } .card-blue .card-back { background: var(--main2); color: white; }
+    .card-purple .card-front { border-color: var(--purple); } .card-purple .card-back { background: var(--purple); }
+    .card-orange .card-front { border-color: var(--orange); } .card-orange .card-back { background: var(--orange); }
+    .card-cyan .card-front { border-color: var(--cyan); } .card-cyan .card-back { background: var(--cyan); }
+    .card-deep-green .card-front { border-color: var(--deep-green); } .card-deep-green .card-back { background: var(--deep-green); color: white; }
+
+
+
+
+.badge-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    margin-top: 50px;
+    border-top: 2px dashed rgba(255, 255, 255, 0.1);
+}
+
+.medal {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #f1c40f, #d4af37);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    box-shadow: 0 0 30px rgba(241, 196, 15, 0.5);
+    border: 5px solid #fff;
+    animation: shine 2s infinite, bounce 3s infinite;
+}
+
+@keyframes shine {
+    0% { filter: brightness(1); transform: scale(1); }
+    50% { filter: brightness(1.3); transform: scale(1.05); }
+    100% { filter: brightness(1); transform: scale(1); }
+}
+
+ /* 9. BADGE SECTION */
+    .badge-section { text-align: center; padding: 60px 20px; background: rgba(255,255,255,0.02); margin: 50px 5%; border-radius: 40px; border: 1px dashed rgba(255,255,255,0.1); }
+    .medal { width: 130px; height: 130px; background: radial-gradient(circle, #f1c40f, #d4af37); border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; font-size: 3.5rem; border: 6px solid #fff; box-shadow: 0 0 40px rgba(241, 196, 15, 0.4); cursor: pointer; transition: 0.3s; animation: pulse 2s infinite; }
+    .medal:hover { transform: scale(1.1) rotate(10deg); }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    .badge-text { color: var(--gold); margin-top: 20px; font-weight: 900; font-size: 1.5rem; text-transform: uppercase; }
+
+
+
+footer p {
+    color: #8b949e;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+/* 4. Footer */
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-top: 1px solid var(--main);
+    margin-top: 50px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Media Query don Wayoyi (Phones) */
+@media (max-width: 600px) {
+    /* 1. Maida babban katin ya zama 90% na fadin wayar */
+    .hifz-card, .hifz-card.full-sura {
+        width: 95% !important;
+        height: auto;
+        min-height: 250px; /* Don rubutu ya samu wuri */
+        margin: 0 auto;
+    }
+
+    /* 2. Rage girman rubutun Larabci a waya */
+    .arabic-text {
+        font-size: 1.4rem !important;
+        line-height: 1.6;
+    }
+
+    .arabic-text-full {
+        font-size: 1.1rem !important;
+        line-height: 1.8;
+        padding: 10px;
+    }
+
+    /* 3. Rage girman fassarar Hausa */
+    .hausa-text {
+        font-size: 0.85rem !important;
+    }
+
+    /* 4. Rage sararin Padding na Main */
+    .card-section {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    /* 5. Gyaran Hero Text a waya */
+    .hero-text h1 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    /* 1. Maida Navbar ta zama mai sauki a waya */
+    .modern-nav {
+        flex-direction: column; /* Links su koma kasa da Logo */
+        gap: 15px;
+        padding: 10px;
+        border-radius: 20px; /* Rage zagayen fadin sa */
+        width: 100%;
+    }
+
+    /* 2. Gyara girman Logo a waya */
+    .logo-text {
+        font-size: 1.2rem !important;
+    }
+
+    /* 3. Gyara Links su jere a tsakiya cikin nutsuwa */
+    .nav-links {
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem !important;
+    }
+
+    .btn-contact {
+        display: none !important;
+    }
+
+  
+}
