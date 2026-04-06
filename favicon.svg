@@ -1,0 +1,24 @@
+<svg xmlns="http://w3.org" viewBox="0 0 100 100">
+  <style>
+    .text-logo {
+      fill: #007bff; 
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 45px;
+      text-anchor: middle;
+      dominant-baseline: central;
+      animation: juyawa 4s infinite linear;
+      transform-origin: center;
+    }
+
+    @keyframes juyawa {
+      0% { transform: rotateY(0deg); fill: #007bff; }
+      50% { transform: rotateY(180deg); fill: #3fb950; }
+      100% { transform: rotateY(360deg); fill: #007bff; }
+    }
+  </style>
+  
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#007bff" stroke-width="5" />
+  
+  <text x="50" y="50" class="text-logo">HT</text>
+</svg>
