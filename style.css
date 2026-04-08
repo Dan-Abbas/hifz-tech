@@ -458,13 +458,13 @@ main {
     color: var(--main); /* Kalar Green dinmu */
 }
 
-.audio-btn svg {
+.audio__btn svg {
     width: 18px;
     height: 18px;
 }
 
 /* Idan aka taba ta (Hover) */
-.audio-btn:hover {
+.audio__btn:hover {
     background: var(--main);
     color: #000;
     transform: scale(1.2) rotate(5deg);
