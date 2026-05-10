@@ -7,8 +7,7 @@
   <meta name="description" content="studieing">
   <meta name="author" content="DAN ABBAS">
   <title>Manhajar Hadda | HifzTech</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><style>text{font-weight:bold;font-size:50px;animation:r 4s infinite linear;}@keyframes r{0%{transform:rotateY(0deg);fill:%23007bff;}50%{transform:rotateY(180deg);fill:%233fb950;}100%{transform:rotateY(360deg);fill:%23007bff;}}</style><circle cx='50' cy='50' r='45' fill='none' stroke='%23007bff' stroke-width='5'/><text x='50' y='55' text-anchor='middle' dominant-baseline='middle'>HT</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><style>text{font-weight:bold;font-size:50px;animation:r 4s infinite linear;}@keyframes r{0%{transform:rotateY(0deg);fill:blue;}50%{transform:rotateY(180deg);fill:green;}100%{transform:rotateY(360deg);fill:blue;}}</style><circle cx='50' cy='50' r='45' fill='none' stroke='blue' stroke-width='5'/><text x='50' y='55' text-anchor='middle' dominant-baseline='middle'>HT</text></svg>">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
@@ -17,7 +16,7 @@
 </head>
 
 <body>
-
+<div class="app-container">
   <div class="loader-wrapper">
     <div class="loader"></div>
     <h2 class="loader-title">DAN|ABBAS <span>HIFZ TECH</span></h2>
@@ -26,7 +25,7 @@
 
 
   <!-- 1. Header & Navbar -->
-  <header>
+  <header class="app-header glass-effect">
     <nav class="modern-nav">
       <div class="logo">
         <span class="logo-icon">📖</span>
@@ -44,20 +43,67 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <div class="hero-text">
+  <main class="app-main no-scrollbar">
+  <section class="hero-text">
     <h1>Bitar Alkur'ani Mai Girma</h1>
-    <p>Hanya mafi sauki ga yara su haddace Juz'u Amma cikin nishadi tare da DAN|ABBAS</p>
+    <p>Hanya mafi sauki ga yara su haddace Juz'u Amma cikin nishadi tare da <span>DAN|ABBAS</span></p>
+  </section>
+ <!-- Grid ɗin Surori --- Grid ɗin Surori -->
+<div class="surah-grid-container">
+    <h2 class="grid-title">ZABO SURA</h2>
+    <div class="surah-grid">
+    <button class="surah-chip" onclick="showSurah('nas')">An-Nas</button>
+    <button class="surah-chip" onclick="showSurah('falaq')">Al-Falaq</button>
+    <button class="surah-chip" onclick="showSurah('ikhlas')">Al-Ikhlas</button>
+    <button class="surah-chip" onclick="showSurah('masad')">Al-Masad</button>
+    <button class="surah-chip" onclick="showSurah('nasr')">An-Nasr</button>
+    <button class="surah-chip" onclick="showSurah('kafirun')">Al-Kafirun</button>
+    <button class="surah-chip" onclick="showSurah('kauthar')">Al-Kauthar</button>
+    <button class="surah-chip" onclick="showSurah('maun')">Al-Ma'un</button>
+    <button class="surah-chip" onclick="showSurah('quraish')">Quraish</button>
+    <button class="surah-chip" onclick="showSurah('fil')">Al-Fil</button>
+    <button class="surah-chip" onclick="showSurah('humaza')">Al-Humaza</button>
+    <button class="surah-chip" onclick="showSurah('asr')">Al-Asr</button>
+    <button class="surah-chip" onclick="showSurah('takathur')">At-Takathur</button>
+    <button class="surah-chip" onclick="showSurah('qariah')">Al-Qari'ah</button>
+    <button class="surah-chip" onclick="showSurah('adiyat')">Al-Adiyat</button>
+    <button class="surah-chip" onclick="showSurah('zalzalah')">Az-Zalzalah</button>
+    <button class="surah-chip" onclick="showSurah('bayyinah')">Al-Bayyinah</button>
+    <button class="surah-chip" onclick="showSurah('qadr')">Al-Qadr</button>
+    <button class="surah-chip" onclick="showSurah('alaq')">Al-Alaq</button>
+    <button class="surah-chip" onclick="showSurah('tin')">At-Tin</button>
+    <button class="surah-chip" onclick="showSurah('inshirah')">Al-Inshirah</button>
+    <button class="surah-chip" onclick="showSurah('duha')">Ad-Duha</button>
+    <button class="surah-chip" onclick="showSurah('lail')">Al-Lail</button>
+    <button class="surah-chip" onclick="showSurah('shams')">Ash-Shams</button>
+    <button class="surah-chip" onclick="showSurah('balad')">Al-Balad</button>
+    <button class="surah-chip" onclick="showSurah('fajr')">Al-Fajr</button>
+    <button class="surah-chip" onclick="showSurah('ghashiyah')">Al-Ghashiyah</button>
+    <button class="surah-chip" onclick="showSurah('ala')">Al-A'la</button>
+    <button class="surah-chip" onclick="showSurah('tariq')">At-Tariq</button>
+    <button class="surah-chip" onclick="showSurah('buruj')">Al-Buruj</button>
+    <button class="surah-chip" onclick="showSurah('inshiqaq')">Al-Inshiqaq</button>
+    <button class="surah-chip" onclick="showSurah('mutaffifin')">Al-Mutaffifin</button>
+    <button class="surah-chip" onclick="showSurah('infitar')">Al-Infitar</button>
+    <button class="surah-chip" onclick="showSurah('takwir')">At-Takwir</button>
+    <button class="surah-chip" onclick="showSurah('abasa')">Abasa</button>
+    <button class="surah-chip" onclick="showSurah('naziat')">An-Nazi'at</button>
+    <button class="surah-chip" onclick="showSurah('naba')">An-Naba'</button>
+    <button class="surah-chip" onclick="showSurah('fatiha')">Al-Fatiha</button>
   </div>
+</div>
 
-  <!-- 2. Main Content (Inda Katin yake) -->
-  <main>
+
+
+
+
     <section class="card-section">
 
-      <div class="hifz-card full-sura">
-        <div class="card-inner">
+      <div id="surah-fatiha" class="hifz-card full-sura">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-fatiha'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front sura-scroll">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('suratulfatiha.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('suratulfatiha.mp3')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
@@ -65,7 +111,8 @@
               </svg>
             </div>
             <h3 class="sura-title">Suratul Fatiha</h3>
-            <p class="arabic-text-full">
+             <p class="arabic-text-full" class="arabic-text" dir="rtl">
+         
               بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ (١) الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ (٢) الرَّحْمَنِ الرَّحِيمِ
               (٣) مَالِكِ يَوْمِ الدِّينِ (٤) إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (٥) اهْدِنَا الصِّرَاطَ
               الْمُسْتَقِيمَ (٦) صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا
@@ -75,30 +122,46 @@
 
           <!-- Baya: Fassara -->
           <div class="card-back sura-scroll">
-            <div class="translation-header">FASSARAR SURAR</div>
-            <p class="hausa-text">
-              <span class="aya-num">1</span> Da sunan Allah, Mai rahama, Mai jin kai. <br>
-              <span class="aya-num">2</span> Godiya ta tabbata ga Allah, Ubangijin halittu. <br>
-              <span class="aya-num">3</span> Mai rahama, Mai jin kai. <br>
-              <span class="aya-num">4</span> Mamallakin ranar sakamako. <br>
-              <span class="aya-num">5</span> Kai muke bautawa, kuma wurinka muke neman taimako. <br>
-              <span class="aya-num">6</span> Ka shiryar da mu ga hanya madaidaiciya. <br>
-              <span class="aya-num">7</span> Hanyar wadanda Ka yi wa ni'ima, ba wadanda aka yi wa fushi ba, kuma ba
-              bace-bace ba.
-            </p>
-          </div>
+  <div class="translation-header">FASSARAR FATIHA (Visual)</div>
+  <p class="hausa-text">
+    <span class="aya-num u-cursor-pointer u-modern-trigger" onclick="sidebar.open('videos/fatiha_1.mp4', 'Fara kowane aiki da sunan Allah domin samun albarka.')">▶️1</span> 
+    Da sunan Allah, Mai rahama, Mai jin kai. <br>
+    
+    <span class="aya-num u-cursor-pointer u-modern-trigger" onclick="sidebar.open('videos/fatiha_2.mp4', 'Godiya ta tabbata ga Allah, Mamallakin kowa da komai.')">▶️2</span> 
+    Godiya ta tabbata ga Allah, Ubangijin talikai. <br>
+    
+    <span class="aya-num u-cursor-pointer u-modern-trigger" onclick="sidebar.open('videos/fatiha_3.mp4', 'Siffofin Allah na jin kai ga halittunsa baki daya.')">▶️3</span> 
+    Mai rahama, Mai jin kai. <br>
+    
+    <span class="aya-num u-cursor-pointer u-modern-trigger" onclick="sidebar.open('videos/fatiha_4.mp4', 'Tuna ranar da kowa zai raba kansa, ranar sakamako.')">▶️4</span> 
+    Mamallakin ranar sakamako. <br>
+    
+    <span class="aya-num u-cursor-pointer u-modern-trigger" onclick="sidebar.open('videos/fatiha_5.mp4', 'Kebe Allah da bauta da neman taimako shi ne ginshikin tauhidi.')">▶️5</span> 
+    Ba Mu bauta wa kowa sai Kai, kuma ba Mu neman taimakon kowa sai gare Ka. <br>
+    
+    <span class="aya-num u-cursor-pointer u-modern-trigger" onclick="sidebar.open('videos/fatiha_6.mp4', 'Neman dorewa a kan tafarki madaidaici.')">▶️6</span> 
+    Ka shiryar da mu ga tafarki madaidaici. <br>
+    
+    <span class="aya-num u-cursor-pointer u-modern-trigger" onclick="sidebar.open('videos/fatiha_7.mp4', 'Tafarkin wadanda Allah ya yi wa ni\'ima, ba na wadanda aka yi fushi da su ba.')">▶️7</span> 
+    Tafarkin wadanda Ka yi wa ni'ima, ba na wadanda aka yi wa fushi ba, kuma ba na batattu ba.
+  </p>
+</div>
+
         </div>
       </div>
       <article class="hifz-card">
-        <div class="card-inner">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-bismillah'); playAudio('null')">×</div>
+ <div class="card__inner">
           <!-- Fuskar Gaba -->
           <figure class="card-front">
-            <div class="audio__btn" onclick="event.stopPropagation(); playAudio('bismillah.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('bismillah.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
               </svg>
+
+
             </div>
             <p class="arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             <small>Danna don Fassara</small>
@@ -111,192 +174,115 @@
         </div>
       </article>
 
-      <!-- SURATUN-NAS (Ayoyi 1-3) -->
-      <div class="hifz-card">
-        <div class="card-inner">
+      <!-- SURATUN-NAS -->
+      <div id="surah-nas" class="hifz-card">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-nas'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-3nas.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('nas.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
-            <p class="arabic-text">قُلْ أَعُوذُ بِرَبِّ النَّاسِ (١) مَلِكِ النَّاسِ (٢) إِلَهِ النَّاسِ (٣)</p>
-            <small>Suratun-Nas: 1-3</small>
-          </div>
-          <div class="card-back">
-            <p>Ka ce: Ina neman tsari ga Ubangijin mutane, Mamallakin mutane, Abin bautar mutane.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- SURATUN-NAS (Ayoyi 4-6) -->
-      <div class="hifz-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('4-6nas.mp3')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-            </div>
-
-            <p class="arabic-text">مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ (٤) الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ (٥)
+             <h3 class="sura-title">Al-nas</h3>
+            <p class="arabic-text">قُلْ أَعُوذُ بِرَبِّ النَّاسِ (١) مَلِكِ النَّاسِ (٢) إِلَهِ النَّاسِ (٣) مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ (٤) الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ (٥)
               مِنَ الْجِنَّةِ وَالنَّاسِ (٦)</p>
-            <small>Suratun-Nas: 4-6</small>
+            <small>Suratun-Nas</small>
           </div>
           <div class="card-back">
-            <p>Daga sharrin mai wasiwasi, mai buya. Wanda yake yin wasiwasi a cikin kirazan mutane. Daga aljannu da
+            <p>Ka ce: Ina neman tsari ga Ubangijin mutane, Mamallakin mutane, Abin bautar mutane, Daga sharrin mai wasiwasi, mai buya. Wanda yake yin wasiwasi a cikin kirazan mutane. Daga aljannu da
               mutane.</p>
           </div>
         </div>
       </div>
 
-      <!-- SURATUL-FALAQ (Ayoyi 1-3) -->
-      <div class="hifz-card">
-        <div class="card-inner">
+      <!-- SURATUL-FALAQ-->
+      <div id="surah-falaq" class="hifz-card">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-falaq'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-3falaq.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('falaq.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
+             <h3 class="sura-title">Al-falaq</h3>
             <p class="arabic-text">قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ (١) مِن شَرِّ مَا خَلَقَ (٢) وَمِن شَرِّ غَاسِقٍ إِذَا
-              وَقَبَ (٣)</p>
-            <small>Suratul-Falaq: 1-3</small>
+              وَقَبَ (٣) وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ (٤) وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ (٥)</p>
+            <small>Suratul-Falaq</small>
           </div>
           <div class="card-back">
             <p>Ka ce: Ina neman tsari ga Ubangijin alfijir. Daga sharrin abin da Ya halitta. Da sharrin dare idan ya yi
-              duhu.</p>
+              duhu. Da sharrin masu hura miyau a cikin kulli. Da sharrin mai hassada idan ya yi hassada.</p>
           </div>
         </div>
       </div>
 
-      <!-- SURATUL-FALAQ (Ayoyi 4-5) -->
-      <div class="hifz-card">
-        <div class="card-inner">
+      <!-- SURATUL-IKHLAS -->
+      <div id="surah-ikhlas" class="hifz-card">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-ikhlas'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('4-5falaq.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('ikhlas.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
-            <p class="arabic-text">وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ (٤) وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ (٥)</p>
-            <small>Suratul-Falaq: 4-5</small>
+             <h3 class="sura-title">Al-ikhlas</h3>
+            <p class="arabic-text">قُلْ هُوَ اللَّهُ أَحَدٌ (١) اللَّهُ الصَّمَدُ (٢) لَمْ يَلِدْ وَلَمْ يُولَدْ (٣) وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ (٤)</p>
+            <small>Suratul-Ikhlas</small>
           </div>
           <div class="card-back">
-            <p>Da sharrin masu hura miyau a cikin kulli. Da sharrin mai hassada idan ya yi hassada.</p>
+            <p>Ka ce: Shi ne Allah, Guda daya. Allah ne madalla, Abin dogaro, Bai haifa ba, kuma ba a haife shi ba. Kuma ba shi da kishiniya ko daya.</p>
           </div>
         </div>
       </div>
-
-      <!-- SURATUL-IKHLAS (Aya 1-2) -->
-      <div class="hifz-card">
-        <div class="card-inner">
+      <!--AL- masad-->
+   <div id="surah-masad" class="hifz-card">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-masad'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-2ikhlas.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('masad.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
-            <p class="arabic-text">قُلْ هُوَ اللَّهُ أَحَدٌ (١) اللَّهُ الصَّمَدُ (٢)</p>
-            <small>Suratul-Ikhlas: 1-2</small>
-          </div>
-          <div class="card-back">
-            <p>Ka ce: Shi ne Allah, Guda daya. Allah ne madalla, Abin dogaro.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- SURATUL-IKHLAS (Aya 3-4) -->
-      <div class="hifz-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('3-4ikhlas.mp3')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-            </div>
-
-            <p class="arabic-text">لَمْ يَلِدْ وَلَمْ يُولَدْ (٣) وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ (٤)</p>
-            <small>Suratul-Ikhlas: 3-4</small>
-          </div>
-          <div class="card-back">
-            <p>Bai haifa ba, kuma ba a haife shi ba. Kuma ba shi da kishiniya ko daya.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="hifz-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-3masad.mp3')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-            </div>
-
+             <h3 class="sura-title">Al-masad</h3>
             <p class="arabic-text">تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ (١) مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ (٢)
-              سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ (٣)</p>
-            <small>Suratul-Masad: 1-3</small>
+              سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ (٣)وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ (٤) فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ (٥)</p>
+            <small>Suratul-masad</small>
           </div>
           <div class="card-back">
-            <p>Hannaye biyu na Abu Lahab sun halaka, kuma ya halaka. Abun da ya tara na dukiya bai amfane shi ba. Zai
-              shiga wuta mai rurruka.</p>
+            <p>Hannaye biyu na Abu lahabi sun halaka, kuma ya halaka. Abun da ya tara na dukiya bai amfane shi ba. Zai
+              shiga wuta mai rurruka, Haka ma matarsa, mai daukar itacen wuta. A wuyanta akwai igiya ta karkashiya.</p>
           </div>
         </div>
       </div>
 
-
-      <div class="hifz-card">
-        <div class="card-inner">
+<!--AL- nasr -->
+      <div id="surah-nasr" class="hifz-card">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-nasr'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('4-5masad.mp3')">
+
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('nasr.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
               </svg>
+
+
             </div>
-
-            <p class="arabic-text">وَامْرَأَتُهُ حَمَّالَةَ الْحَطَبِ (٤) فِي جِيدِهَا حَبْلٌ مِّن مَّسَدٍ (٥)</p>
-            <small>Suratul-Masad: 4-5</small>
-          </div>
-          <div class="card-back">
-            <p>Haka ma matarsa, mai daukar itacen wuta. A wuyanta akwai igiya ta karkashiya.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="hifz-card">
-        <div class="card-inner">
-          <div class="card-front">
-
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-3nasr.mp3')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-            </div>
+             <h3 class="sura-title">Al-nasr</h3>
             <p class="arabic-text">
               إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ (١) وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا
               (٢) فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا (٣)
@@ -311,65 +297,45 @@
       </div>
 
 
-
-      <div class="hifz-card">
-        <div class="card-inner">
+<!-- AL-kafirun -->
+      <div id="surah-kafirun" class="hifz-card">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-kafirun'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-3kafirun.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('kafirun.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
+             <h3 class="sura-title">Al-kafirun</h3>
             <p class="arabic-text small-text">قُلْ يَا أَيُّهَا الْكَافِرُونَ (١) لَا أَعْبُدُ مَا تَعْبُدُونَ (٢) وَلَا
-              أَنتُمْ عَابِدُونَ مَا أَعْبُدُ (٣)</p>
-            <small>Suratul Kafirun: 1-3</small>
+              أَنتُمْ عَابِدُونَ مَا أَعْبُدُ (٣)وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ (٤) وَلَا أَنتُمْ عَابِدُونَ مَا
+              أَعْبُدُ (٥) لَكُمْ دِينُكُمْ وَلِيَ دِينِ (٦)</p>
+            <small>Suratul Kafirun</small>
           </div>
           <div class="card-back">
             <p>Ka ce: Ya ku kafirai! Ba na bauta wa abin da kuke bautawa. Kuma ba ku ne masu bauta wa abin da nake
-              bautawa ba.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="hifz-card">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('4-6kafirun.mp3')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-            </div>
-
-            <p class="arabic-text small-text">وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ (٤) وَلَا أَنتُمْ عَابِدُونَ مَا
-              أَعْبُدُ (٥) لَكُمْ دِينُكُمْ وَلِيَ دِينِ (٦)</p>
-            <small>Suratul Kafirun: 4-6</small>
-          </div>
-          <div class="card-back">
-            <p>Kuma ba ni ne mai bauta wa abin da kuka bauta wa ba. Kuma ba ku ne masu bauta wa abin da nake bautawa ba.
+              bautawa ba, Kuma ba ni ne mai bauta wa abin da kuka bauta wa ba. Kuma ba ku ne masu bauta wa abin da nake bautawa ba.
               Kuna da addininku, ni kuma ina da addinina.</p>
           </div>
         </div>
       </div>
-
-
-      <div class="hifz-card card-blue">
-        <div class="card-inner">
+<!-- AL-kauthar -->
+      <div id="surah-kauthar" class="hifz-card card-blue">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-kauthar'); playAudio('null')">×</div>
+ <div class="card__inner">
           <!-- Fuskar Gaba: Larabci -->
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-3kauthar.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('kauthar.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
+             <h3 class="sura-title">Al-kauthar</h3>
             <p class="arabic-text">إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ (١) فَصَلِّ لِرَبِّكَ وَانْحَرْ (٢) إِنَّ شَانِئَكَ
               هُوَ الْأَبْتَرُ (٣)</p>
             <small style="margin-top: 15px; opacity: 0.8;">Suratul Kauthar: 1-3</small>
@@ -381,23 +347,24 @@
               yanka. Lallai mai ƙinka, shi ne mai yankakken alheri.</p>
           </div>
         </div>
-      </div>
+      </div>``
 
 
-
-      <div class="hifz-card card-purple full-sura">
-        <div class="card-inner">
+<!-- AL-ma'un -->
+      <div id="surah-maun" class="hifz-card card-purple full-sura">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-maun'); playAudio('null')">×</div>
+ <div class="card__inner">
           <!-- Fuskar Gaba: Larabci (Ayoyi 1-7) -->
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-7maun.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('maun.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
-            <p class="arabic-text-full" style="font-size: 1.2rem; line-height: 2;">
+             <h3 class="sura-title">Al-ma'un</h3>
+            <p class="arabic-text-full">
               أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ (١) فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ (٢) وَلَا يَحُضُّ عَلَىٰ
               طَعَامِ الْمِسْكِينِ (٣) فَوَيْلٌ لِّلْمُصَلِّينَ (٤) الَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ (٥)
               الَّذِينَ هُمْ يُرَاءُونَ (٦) وَيَمْنَعُونَ الْمَاعُونَ (٧)
@@ -417,22 +384,23 @@
       </div>
 
 
-      <div class="hifz-card card-orange full-sura">
-        <div class="card-inner">
+      <div id="surah-quraish" class="hifz-card card-orange full-sura">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-quraish'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-4quraish.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('quraish.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
+             <h3 class="sura-title">Al-quraish</h3>
             <p class="arabic-text-full" style="font-size: 1.3rem; line-height: 2.2;">
               لِإِيلَافِ قُرَيْشٍ (١) إِيلَافِهِمْ رِحْلَةَ الشِّتَاءِ وَالصَّيْفِ (٢) فَلْيَعْبُدُوا رَبَّ هَٰذَا
               الْبَيْتِ (٣) الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ (٤)
             </p>
-            <small style="color: #8b949e;">Suratul Quraish: 1-4</small>
+            <small style="color: #8b949e;">Suratul Quraish</small>
           </div>
           <div class="card-back">
             <p>Saboda sabawar Quraishawa. Sabawarsu da tafiyar hunturu da rani. To su bauta wa Ubangijin wannan Gida.
@@ -440,25 +408,24 @@
           </div>
         </div>
       </div>
-
-
-      <div class="hifz-card card-cyan full-sura">
-        <div class="card-inner">
+      <div id="surah-fil" class="hifz-card card-cyan full-sura">
+<div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-fil'); playAudio('null')">×</div>
+ <div class="card__inner">
           <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-5fil.mp3')">
+            <div class="audio--btn" onclick="event.stopPropagation(); playAudio('fil.aac')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                 <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
+               </svg>
             </div>
-
-            <p class="arabic-text-full" style="font-size: 1.2rem; line-height: 2.1;">
+             <h3 class="sura-title">Al-fil</h3>
+            <p class="arabic-text-full">
               أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَابِ الْفِيلِ (١) أَلَمْ يَجْعَلْ كَيْدَهُمْ فِي تَضْلِيلٍ (٢)
               وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ (٣) تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ (٤) فَجَعَلَهُمْ
               كَعَصْفٍ مَّأْكُولٍ (٥)
             </p>
-            <small style="color: #8b949e;">Suratul Fil: 1-5</small>
+            <small style="color: #8b949e;">Suratul Fil</small>
           </div>
           <div class="card-back">
             <p>Shin ba ka ga yadda Ubangijinka Ya yi da ma'abuta Giwa ba? Shin bai sanya kaidinsu ya bace ba? Kuma Ya
@@ -467,91 +434,1290 @@
           </div>
         </div>
       </div>
-
-      <div class="hifz-card card-red full-sura">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-9humazah.mp3')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-            </div>
-
-            <p class="arabic-text-full" style="font-size: 1.1rem; line-height: 1.9;">
-              وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ (١) الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ (٢) يَحْسَبُ أَنَّ مَالَهُ
-              أَخْلَدَهُ (٣) كَلَّا ۖ لَيُنبَذَنَّ فِي الْحُطَمَةِ (٤) وَمَا أَدْرَاكَ مَا الْحُطَمَةُ (٥) نَارُ اللَّهِ
-              الْمُوقَدَةُ (٦) الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ (٧) إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ (٨) فِي عَمَدٍ
-              مُّمَدَّدَةٍ (٩)
-            </p>
-            <small>Suratul Humazah: 1-9</small>
-          </div>
-          <div class="card-back sura-scroll">
-            <p style="font-size: 0.8rem;">Bone ya tabbata ga kowane mai tsegumi, mai yawan kushe...</p>
-          </div>
-        </div>
+<!-- AL-humazah -->
+      <div id="surah-humaza" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-humaza'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <!-- Gaba: Larabci -->
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('humaza.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
       </div>
+      <h3 class="sura-title">Suratul Humaza</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ (١) الَّذِي جَمَعَ مَالًا وَعَدَّدَهُ (٢) يَحْسَبُ أَنَّ مَالَهُ أَخْلَدَهُ (٣) كَلَّا لَيُنبَذَنَّ فِي الْحُطَمَةِ (٤) وَمَا أَدْرَاكَ مَا الْحُطَمَةُ (٥) نَارُ اللَّهِ الْمُوقَدَةُ (٦) الَّتِي تَطَّلِعُ عَلَى الْأَفْئِدَةِ (٧) إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ (٨) فِي عَمَدٍ مُّمَدَّدَةٍ (٩)
+      </p>
+    </div>
 
+    <!-- Baya: Fassara -->
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Bone ya tabbata ga kowane mai tsegumi, mai kushe. <br>
+        <span class="aya-num">2</span> Wanda ya tara dukiya, ya dinga lissafa ta. <br>
+        <span class="aya-num">3</span> Yana zaton cewa dukiyarsa za ta dawwamar da shi. <br>
+        <span class="aya-num">4</span> A’a! Lallai za a jefa shi a cikin Hutama. <br>
+        <span class="aya-num">5</span> Me ya sanar da kai mene ne Hutama? <br>
+        <span class="aya-num">6</span> Wutar Allah ce kunnaunniya. <br>
+        <span class="aya-num">7</span> Wadda take ratsawa har zuwa zukata. <br>
+        <span class="aya-num">8</span> Lallai ita wutar, a rufe take a kansu. <br>
+        <span class="aya-num">9</span> A cikin wasu ginshikai (na wuta) mikakku.
+      </p>
+    </div>
+  </div>
+</div>
 
-      <div class="hifz-card card-deep-green full-sura">
-        <div class="card-inner">
-          <!-- Fuskar Gaba: Larabci (Ayoyi 1-8) -->
-          <div class="card-front">
-            <div class="audio-btn" onclick="event.stopPropagation(); playAudio('1-8takathur.mp3')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              </svg>
-            </div>
-
-            <p class="arabic-text-full" style="font-size: 1.1rem; line-height: 2;">
-              أَلْهَاكُمُ التَّكَاثُرُ (١) حَتَّىٰ زُرْتُمُ الْمَقَابِرَ (٢) كَلَّا سَوْفَ تَعْلَمُونَ (٣) ثُمَّ كَلَّا
-              سَوْفَ تَعْلَمُونَ (٤) كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ (٥) لَتَرَوُنَّ الْجَحِيمَ (٦) ثُمَّ
-              لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ (٧) ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ (٨)
-            </p>
-            <small style="color: #8b949e;">Suratul Takathur: 1-8</small>
-          </div>
-
-          <!-- Fuskar Baya: Fassara -->
-          <div class="card-back sura-scroll">
-            <p style="font-size: 0.85rem; padding: 10px;">
-              Gasar neman ƙaruwa (ta dukiya da 'ya'ya) ta shagaltar da ku. Har kuka ziyarci makabarta. A'a! Sa'an nan za
-              ku sani. Kuma a'a! Sa'an nan za ku sani. A'a! In dai har kun san ilimin yaƙini. Lallai za ku ga Jahannama.
-              Sa'an nan kuma lallai za ku ganta da idon yaƙini. Sa'an nan kuma lallai za a tambaye ku a ranar nan game
-              da ni'ima.
-            </p>
-          </div>
-        </div>
+      <!--suratul asr-->
+      <div id="surah-asr" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-asr'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <!-- Gaba: Larabci -->
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('asr.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
       </div>
+      <h3 class="sura-title">Suratul Asr</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالْعَصْرِ (١) إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ (٢) إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ (٣)
+      </p>
+    </div>
+    <!-- Baya: Fassara -->
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Ina rantsuwa da zamani. <br>
+        <span class="aya-num">2</span> Lallai mutum yana cikin asara. <br>
+        <span class="aya-num">3</span> Sai fa wadanda suka yi imani, kuma suka aikata ayyuka na kwarai, kuma suka yi wa juna wasiyya da gaskiya, kuma suka yi wa juna wasiyya da yin hakuri.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <!-- AL-takathur -->
+    <div id="surah-takathur" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-takathur'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('takathur.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratut Takathur</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        أَلْهَاكُمُ التَّكَاثُرُ (١) حَتَّى زُرْتُمُ الْمَقَابِرَ (٢) كَلَّا سَوْفَ تَعْلَمُونَ (٣) ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ (٤) كَلَّا لَوْ تَعْلَمُونَ عِلْمَ الْيَقِينِ (٥) لَتَرَوُنَّ الْجَحِيمَ (٦) ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِينِ (٧) ثُمَّ لَتُسْأَلُنَّ يَوْمَئِذٍ عَنِ النَّعِيمِ (٨)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Gasar tara dukiya da 'ya'ya ta shagaltar da ku. <br>
+        <span class="aya-num">2</span> Har kuka ziyarci makabartu. <br>
+        <span class="aya-num">3</span> A’a! Nan gaba kadan za ku sani. <br>
+        <span class="aya-num">4</span> Sannan kuma, nan gaba kadan za ku sani. <br>
+        <span class="aya-num">5</span> A’a! Da dai kuna da ilimin yakini (da ba za ku shagala ba). <br>
+        <span class="aya-num">6</span> Lallai za ku ga wutar Jahim. <br>
+        <span class="aya-num">7</span> Sannan kuma, lallai za ku gani da idon yakini. <br>
+        <span class="aya-num">8</span> Sannan kuma, lallai za a tambaye ku a ranar nan game da ni’imomi.
+      </p>
+    </div>
+  </div>
+</div>
+
+      <!-- AL-QARI'AH -->
+<div id="surah-qariah" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-qariah'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('qariah.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Qari'ah</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        الْقَارِعَةُ (١) مَا الْقَارِعَةُ (٢) وَمَا أَدْرَاكَ مَا الْقَارِعَةُ (٣) يَوْمَ يَكُونُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوثِ (٤) وَتَكُونُ الْجِبَالُ كَالْعِهْنِ الْمَنْفُوشِ (٥) فَأَمَّا مَنْ ثَقُلَتْ مَوَازِينُهُ (٦) فَهُوَ فِي عِيشَةٍ رَاضِيَةٍ (٧) وَأَمَّا مَنْ خَفَّتْ مَوَازِينُهُ (٨) فَأُمُّهُ هَاوِيَةٌ (٩) وَمَا أَدْرَاكَ مَا هِيَهْ (١٠) نَارٌ حَامِيَةٌ (١١)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Mai kidima mutane (Alkiyama). <br>
+        <span class="aya-num">2</span> Mene ne mai kidima mutane? <br>
+        <span class="aya-num">3</span> Me ya sanar da kai mene ne mai kidima mutane? <br>
+        <span class="aya-num">4</span> Ranar da mutane za su kasance kamar kwarin da aka watsa. <br>
+        <span class="aya-num">5</span> Duwatsu kuma za su kasance kamar audugar da aka tace. <br>
+        <span class="aya-num">6</span> To, amma wanda ma'aunansa (na ayyukan kwarai) suka yi nauyi. <br>
+        <span class="aya-num">7</span> Shi yana cikin rayuwa abar yarda. <br>
+        <span class="aya-num">8</span> Amma wanda ma'aunansa suka yi sauki. <br>
+        <span class="aya-num">9</span> To matattararsa ita ce Hawiya. <br>
+        <span class="aya-num">10</span> Me ya sanar da kai mene ne ita? <br>
+        <span class="aya-num">11</span> Wuta ce mai tsananin zafi.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- AL-ADIYAT -->
+<div id="surah-adiyat" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-adiyat'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('adiyat.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Adiyat</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالْعَادِيَاتِ ضَبْحًا (١) فَالْمُورِيَاتِ قَدْحًا (٢) فَالْمُغِيرَاتِ صُبْحًا (٣) فَأَثَرْنَ بِهِ نَقْعًا (٤) فَوَسَطْنَ بِهِ جَمْعًا (٥) إِنَّ الْإِنْسَانَ لِرَبِّهِ لَكَنُودٌ (٦) وَإِنَّهُ عَلَى ذَلِكَ لَشَهِيدٌ (٧) وَإِنَّهُ لِحُبِّ الْخَيْرِ لَشَدِيدٌ (٨) أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِي الْقُبُورِ (٩) وَحُصِّلَ مَا فِي الصُّدُورِ (١٠) إِنَّ رَبَّهُمْ بِهِمْ يَوْمَئِذٍ لَخَبِيرٌ (١١)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Ina rantsuwa da dawakai masu gudu suna hucin fari. <br>
+        <span class="aya-num">2</span> Masu fitar da tartsatsin wuta (da kofatansu). <br>
+        <span class="aya-num">3</span> Masu kai hari da asuba. <br>
+        <span class="aya-num">4</span> Suka ta da kura a lokacin. <br>
+        <span class="aya-num">5</span> Suka kutsa tsakiyar taron makiya. <br>
+        <span class="aya-num">6</span> Lallai mutum mai butulci ne ga Ubangijinsa. <br>
+        <span class="aya-num">7</span> Kuma lallai shi kansa shaida ne a kan hakan. <br>
+        <span class="aya-num">8</span> Kuma lallai shi mai tsananin son dukiya ne. <br>
+        <span class="aya-num">9</span> Ashe ba ya sanin lokacin da za a tono abin da yake cikin kabari? <br>
+        <span class="aya-num">10</span> Kuma a bayyana abin da yake cikin kiraza? <br>
+        <span class="aya-num">11</span> Lallai Ubangijinsu a ranar nan Masani ne gare su.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AZ-ZALZALAH -->
+<div id="surah-zalzalah" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-zalzalah'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('zalzalah.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Zalzalah</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا (١) وَأَخْرَجَتِ الْأَرْضُ أَثْقَالَهَا (٢) وَقَالَ الْإِنْسَانُ مَا لَهَا (٣) يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا (٤) بِأَنَّ رَبَّكَ أَوْحَى لَهَا (٥) يَوْمَئِذٍ يَصْدُرُ النَّاسُ أَشْتَاتًا لِيُرَوْا أَعْمَالَهُمْ (٦) فَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُ (٧) وَمَنْ يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُ (٨)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Idan aka girgiza kasa girgiza tata. <br>
+        <span class="aya-num">2</span> Kuma kasa ta fitar da nauyoyinta (na cikinta). <br>
+        <span class="aya-num">3</span> Kuma mutum ya ce: "Me ya same ta?" <br>
+        <span class="aya-num">4</span> A ranar nan za ta ba da labarun ta. <br>
+        <span class="aya-num">5</span> Domin Ubangijinka ya yi mata wahayi (ya umarce ta). <br>
+        <span class="aya-num">6</span> A ranar nan mutane za su fito rukuni-rukuni domin a nuna musu ayyukansu. <br>
+        <span class="aya-num">7</span> To, wanda ya aikata gwargwadon kwayar zarra na alheri, zai gan shi. <br>
+        <span class="aya-num">8</span> Wanda kuma ya aikata gwargwadon kwayar zarra na sharri, zai gan shi.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-BAYYINAH -->
+<div id="surah-bayyinah" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-bayyinah'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('bayyinah.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Bayyinah</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        لَمْ يَكُنِ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ مُنْفَكِّينَ حَتَّى تَأْتِيَهُمُ الْبَيِّنَةُ (١) رَسُولٌ مِنَ اللَّهِ يَتْلُو صُحُفًا مُطَهَّرَةً (٢) فِيهَا كُتُبٌ قَيِّمَةٌ (٣) وَمَا تَفَرَّقَ الَّذِينَ أُوتُوا الْكِتَابَ إِلَّا مِنْ بَعْدِ مَا جَاءَتْهُمُ الْبَيِّنَةُ (٤) وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ وَذَلِكَ دِينُ الْقَيِّمَةِ (٥) إِنَّ الَّذِينَ كَفَرُوا مِنْ أَهْلِ الْكِتَابِ وَالْمُشْرِكِينَ فِي نَارِ جَهَنَّمَ خَالِدِينَ فِيهَا أُولَئِكَ هُمْ شَرُّ الْبَرِيَّةِ (٦) إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أُولَئِكَ هُمْ خَيْرُ الْبَرِيَّةِ (٧) جَزَاؤُهُمْ عِنْدَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا أَبَدًا رَضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ ذَلِكَ لِمَنْ خَشِيَ رَبَّهُ (٨)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Wadanda suka kafirta daga ma'abuta Littafi da mushirikai ba su kasance masu barin (kafircinsu) ba har sai bayyanannen hujjoji sun zo musu. <br>
+        <span class="aya-num">2</span> Wani Manzo daga Allah yana karanta takardu (na Alkur'ani) tsarkakku. <br>
+        <span class="aya-num">3</span> A cikinsu akwai dokoki madaidaica. <br>
+        <span class="aya-num">4</span> Kuma wadanda aka bai wa Littafi ba su rarraba ba sai bayan bayyanannen hujja ta zo musu. <br>
+        <span class="aya-num">5</span> Kuma ba a umarce su da komai ba face su bauta wa Allah suna masu tsarkake addini a gare Shi... <br>
+        <span class="aya-num">6-8</span> Lallai wadanda suka kafirta... suna cikin wutar Jahannama... Su ne mafi kashin halitta. Wadanda kuwa suka yi imani... Su ne mafi alherin halitta. Sakamakonsu a wurin Ubangijinsu shi ne Aljannar Adn...
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-QADR -->
+<div id="surah-qadr" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-qadr'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('qadr.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Qadr</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        إِنَّا أَنْزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ (١) وَمَا أَدْرَاكَ مَا لَيْلَةُ الْقَدْرِ (٢) لَيْلَةُ الْقَدْرِ خَيْرٌ مِنْ أَلْفِ شَهْرٍ (٣) تَنَزَّلُ الْمَلَائِكَةُ وَالرُّوحُ فِيهَا بِإِذْنِ رَبِّهِمْ مِنْ كُلِّ أَمْرٍ (٤) سَلَامٌ هِيَ حَتَّى مَطْلَعِ الْفَجْرِ (٥)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Lallai Mu Mun saukar da shi (Alkur'ani) a daren buwaya (Lailatul Qadr). <br>
+        <span class="aya-num">2</span> Me ya sanar da kai mene ne daren buwaya? <br>
+        <span class="aya-num">3</span> Daren buwaya ya fi watanni dubu alheri. <br>
+        <span class="aya-num">4</span> Mala'iku da Ruhi (Jibrilu) suna sauka a cikinsa da izinin Ubangijinsu... <br>
+        <span class="aya-num">5</span> Aminci ne shi har zuwa bullar alfijir.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-ALAQ -->
+<div id="surah-alaq" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-alaq'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <!-- Gaba: Rubutun Larabci -->
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('alaq.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Alaq</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ (١) خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ (٢) اقْرَأْ وَرَبُّكَ الْأَكْرَمُ (٣) الَّذِي عَلَّمَ بِالْقَلَمِ (٤) عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ (٥) كَلَّا إِنَّ الْإِنْسَانَ لَيَطْغَى (٦) أَنْ رَآهُ اسْتَغْنَى (٧) إِنَّ إِلَى رَبِّكَ الرُّجْعَى (٨) أَرَأَيْتَ الَّذِي يَنْهَى (٩) عَبْدًا إِذَا صَلَّى (١٠) أَرَأَيْتَ إِنْ كَانَ عَلَى الْهُدَى (١١) أَوْ أَمَرَ بِالتَّقْوَى (١٢) أَرَأَيْتَ إِنْ كَذَّبَ وَتَوَلَّى (١٣) أَلَمْ يَعْلَمْ بِأَنَّ اللَّهَ يَرَى (١٤) كَلَّا لَئِنْ لَمْ يَنْتَهِ لَنَسْفَعًا بِالنَّاصِيَةِ (١٥) نَاصِيَةٍ كَاذِبَةٍ خَاطِئَةٍ (١٦) فَلْيَدْعُ نَادِيَهُ (١٧) سَنَدْعُ الزَّبَانِيَةَ (١٨) كَلَّا لَا تُطِعْهُ وَاسْجُدْ وَاقْتَرِبْ ۩ (١٩)
+      </p>
+    </div>
+
+    <!-- Baya: Fassarar Hausa -->
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Karanta da sunan Ubangijinka Wanda Ya yi halitta. <br>
+        <span class="aya-num">2</span> Ya halicci mutum daga gudan jini. <br>
+        <span class="aya-num">3</span> Karanta, kuma Ubangijinka Shi ne Mafi karramawa. <br>
+        <span class="aya-num">4</span> Wanda Ya koyar (da rubutu) da alkalami. <br>
+        <span class="aya-num">5</span> Ya koyar da mutum abin da bai sani ba. <br>
+        <span class="aya-num">6</span> A'a! Lallai mutum yana yin girman kai (ketare haddi). <br>
+        <span class="aya-num">7</span> Domin ya ga kansa ya wadata. <br>
+        <span class="aya-num">8</span> Lallai zuwa ga Ubangijinka kawai makoma take. <br>
+        <span class="aya-num">9</span> Shin ka ga wanda yake hana, <br>
+        <span class="aya-num">10</span> Wani bawa idan yana salla? <br>
+        <span class="aya-num">11</span> Shin ka gani, idan (bawan) yana kan shiriya? <br>
+        <span class="aya-num">12</span> Ko kuma ya yi umarni da tsoron Allah? <br>
+        <span class="aya-num">13</span> Shin ka gani, idan (mai hanawar) ya karyata, kuma ya juya baya? <br>
+        <span class="aya-num">14</span> Shin bai sani ba cewa lallai Allah yana gani? <br>
+        <span class="aya-num">15</span> A'a! Lallai idan bai bari ba, za mu fizge shi ta gashin goshinsa. <br>
+        <span class="aya-num">16</span> Gashin goshi mai karya, mai kuskure. <br>
+        <span class="aya-num">17</span> To, sai ya kira mutanen majalisarsa. <br>
+        <span class="aya-num">18</span> Mu kuma za mu kira Mala'ikun azaba. <br>
+        <span class="aya-num">19</span> A'a! Kada ka yi masa biyayya; kuma ka yi sujada, sannan ka kusanci (Ubangijinka).
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- AT-TIN -->
+<div id="surah-tin" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-tin'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('tin.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratut Tin</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالتِّينِ وَالزَّيْتُونِ (١) وَطُورِ سِينِينَ (٢) وَهَذَا الْبَلَدِ الْأَمِينِ (٣) لَقَدْ خَلَقْنَا الْإِنْسَانَ فِي أَحْسَنِ تَقْوِيمٍ (٤) ثُمَّ رَدَدْنَاهُ أَسْفَلَ سَافِلِينَ (٥) إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ (٦) فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّينِ (٧) أَلَيْسَ اللَّهُ بِأَحْكَمِ الْحَاكِمِينَ (٨)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Ina rantsuwa da 'ya'yan bature da zaitun. <br>
+        <span class="aya-num">2</span> Da dutsen Siniya. <br>
+        <span class="aya-num">3</span> Da wannan gari amintacce (Makka). <br>
+        <span class="aya-num">4</span> Lallai Mun halicci mutum a cikin mafi kyaun sura. <br>
+        <span class="aya-num">5</span> Sannan muka mayar da shi mafi kaskancin masu kaskanci. <br>
+        <span class="aya-num">6</span> Sai wadanda suka yi imani suka aikata ayyuka na kwarai... <br>
+        <span class="aya-num">7</span> To mene ne zai karyata ka bayan haka game da sakamako? <br>
+        <span class="aya-num">8</span> Ashe Allah ba Shi ne Mafi hukuncin masu hukunci ba?
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-duha -->
+<div id="surah-duha" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-duha'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('duha.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratun Duha</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالضُّحَى (١) وَاللَّيْلِ إِذَا سَجَى (٢) مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَى (٣) وَلَلْآخِرَةُ خَيْرٌ لَكَ مِنَ الْأُولَى (٤) وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَى (٥) أَلَمْ يَجِدْكَ يَتِيمًا فَآوَى (٦) وَوَجَدَكَ ضَالًّا فَهَدَى (٧) وَوَجَدَكَ عَائِلًا فَأَغْنَى (٨) فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ (٩) وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ (١٠) وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ (١١)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Ina rantsuwa da lokacin hantsi. <br>
+        <span class="aya-num">2</span> Da kuma dare idan ya yi tsit. <br>
+        <span class="aya-num">3</span> Ubangijinka bai bar ka ba, kuma bai yi fushi da kai ba. <br>
+        <span class="aya-num">4</span> Kuma lallai karshe (Lahira) shi ne mafi alheri a gare ka fiye da farko (Duniya). <br>
+        <span class="aya-num">5</span> Kuma lallai Ubangijinka zai ba ka har sai ka yarda (ka ji dadi). <br>
+        <span class="aya-num">6</span> Shin bai same ka maraya ba, ya ba ka matsuguni? <br>
+        <span class="aya-num">7</span> Kuma ya same ka wanda bai san shari'a ba, ya shiryar da kai? <br>
+        <span class="aya-num">8</span> Kuma ya same ka matalaci, ya wadatar da kai? <br>
+        <span class="aya-num">9</span> Saboda haka, maraya kada ka danne shi. <br>
+        <span class="aya-num">10</span> Mai tambaya (maula) kuma kada ka tsauta masa. <br>
+        <span class="aya-num">11</span> Amma game da ni'imar Ubangijinka, to ka bayyana ta.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!--al inshirah -->
+<div id="surah-inshirah" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-inshirah'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('inshirah.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Inshirah</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ (١) وَوَضَعْنَا عَنْكَ وِزْرَكَ (٢) الَّذِي أَنْقَضَ ظَهْرَكَ (٣) وَرَفَعْنَا لَكَ ذِكْرَكَ (٤) فَإِنَّ مَعَ الْعُسْرِ يُسْرًا (٥) إِنَّ مَعَ الْعُسْرِ يُسْرًا (٦) فَإِذَا فَرَغْتَ فَانْصَبْ (٧) وَإِلَى رَبِّكَ فَارْغَبْ (٨)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+        <span class="aya-num">1</span> Shin ba mu buda maka kirjinka ba? <br>
+        <span class="aya-num">2</span> Kuma muka sauke maka nauyinka (zunubanka)? <br>
+        <span class="aya-num">3</span> Wanda ya raunana bayanka. <br>
+        <span class="aya-num">4</span> Kuma muka daukaka maka ambatonka. <br>
+        <span class="aya-num">5</span> To, lallai tare da tsanani akwai sauki. <br>
+        <span class="aya-num">6</span> Lallai tare da tsanani akwai sauki. <br>
+        <span class="aya-num">7</span> Saboda haka, idan ka gama (aikin gari), to ka tsaya (wajen ibada). <br>
+        <span class="aya-num">8</span> Kuma zuwa ga Ubangijinka kawai ka karkata (kwadayinka).
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-LAIL -->
+<div id="surah-layl" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-lail'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('lail.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+      </div>
+      <h3 class="sura-title">Suratul Layl</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَاللَّيْلِ إِذَا يَغْشَى (١) وَالنَّهَارِ إِذَا تَجَلَّى (٢) وَمَا خَلَقَ الذَّكَرَ وَالْأُنْثَى (٣) إِنَّ سَعْيَكُمْ لَشَتَّى (٤) فَأَمَّا مَنْ أَعْطَى وَاتَّقَى (٥) وَصَدَّقَ بِالْحُسْنَى (٦) فَسَنُيَسِّرُهُ لِلْيُسْرَى (٧) وَأَمَّا مَنْ بَخِلَ وَاسْتَغْنَى (٨) وَكَذَّبَ بِالْحُسْنَى (٩) فَسَنُيَسِّرُهُ لِلْعُسْرَى (١٠) وَمَا يُغْنِي عَنْهُ مَالُهُ إِذَا تَرَدَّى (١١) إِنَّ عَلَيْنَا لَلْهُدَى (١٢) وَإِنَّ لَنَا لَلْآخِرَةَ وَالْأُولَى (١٣) فَأَنْذَرْتُكُمْ نَارًا تَلَظَّى (١٤) لَا يَصْلَاهَا إِلَّا الْأَشْقَى (١٥) الَّذِي كَذَّبَ وَتَوَلَّى (١٦) وَسَيُجَنَّبُهَا الْأَتْقَى (١٧) الَّذِي يُؤْتِي مَالَهُ يَتَزَكَّى (١٨) وَمَا لِأَحَدٍ عِنْدَهُ مِنْ نِعْمَةٍ تُجْزَى (١٩) إِلَّا ابْتِغَاءَ وَجْهِ رَبِّهِ الْأَعْلَى (٢٠) وَلَسَوْفَ يَرْضَى (٢١)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Ina rantsuwa da rana da hantsinta. <br>
+  <span class="aya-num">2</span> Da wata idan ya biyo bayanta. <br>
+  <span class="aya-num">3</span> Da rana idan ta bayyana ta (ranar). <br>
+  <span class="aya-num">4</span> Da dare idan ya rufe ta. <br>
+  <span class="aya-num">5</span> Da sama da Wanda Ya gina ta. <br>
+  <span class="aya-num">6</span> Da kasa da Wanda Ya shimfida ta. <br>
+  <span class="aya-num">7</span> Da rai da Wanda Ya daidaita shi. <br>
+  <span class="aya-num">8</span> Sannan Ya sanar da shi laifinsa da tsoron Allahnsa. <br>
+  <span class="aya-num">9</span> Lallai wanda ya tsarkake shi (rai) ya rabauta. <br>
+  <span class="aya-num">10</span> Wanda kuwa ya turbuɗa shi (da zunubi) ya yi asara. <br>
+  <span class="aya-num">11</span> (Mutanen) Samudawa sun karyata saboda ketare haddinsu. <br>
+  <span class="aya-num">12</span> Sa'ad da mafi rishin albarkarsu ya tashi (don ya kashe rakumar). <br>
+  <span class="aya-num">13</span> Sai Manzon Allah (Annabi Salihu) ya ce musu: "Ku kyale rakumar Allah da abin shan ta." <br>
+  <span class="aya-num">14</span> Sai suka karyata shi, suka soke ta; sai Ubangijinka Ya darkake su saboda zunubinsu, sannan Ya daidaita ta (halakar a kansu). <br>
+  <span class="aya-num">15</span> Kuma Shi (Allah) ba Ya tsoron sakamakon halakar.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ASH-SHAMS -->
+<div id="surah-shams" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-shams'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('shams.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+      </div>
+      <h3 class="sura-title">Suratush Shams</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالشَّمْسِ وَضُحَاهَا (١) وَالْقَمَرِ إِذَا تَلَاهَا (٢) وَالنَّهَارِ إِذَا جَلَّاهَا (٣) وَاللَّيْلِ إِذَا يَغْشَاهَا (٤) وَالسَّمَاءِ وَمَا بَنَاهَا (٥) وَالْأَرْضِ وَمَا طَحَاهَا (٦) وَنَفْسٍ وَمَا سَوَّاهَا (٧) فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا (٨) قَدْ أَفْلَحَ مَنْ زَكَّاهَا (٩) وَقَدْ خَابَ مَنْ دَسَّاهَا (١٠)...
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+     <p class="hausa-text">
+  <span class="aya-num">1</span> Ina rantsuwa da rana da rana. <br>
+  <span class="aya-num">2</span> Da wata idan ya biyo bayanta. <br>
+  <span class="aya-num">3</span> Da rana idan ta bayyana ta (ranar). <br>
+  <span class="aya-num">4</span> Da dare idan ya rufe ta. <br>
+  <span class="aya-num">5</span> Da sama da Wanda Ya gina ta. <br>
+  <span class="aya-num">6</span> Da kasa da Wanda Ya shimfida ta. <br>
+  <span class="aya-num">7</span> Da rai da Wanda Ya daidaita shi. <br>
+  <span class="aya-num">8</span> Sannan Ya sanar da shi laifinsa da tsoron Allahnsa. <br>
+  <span class="aya-num">9</span> Lallai wanda ya tsarkake shi (rai) ya rabauta. <br>
+  <span class="aya-num">10</span> Wanda kuwa ya turbuɗa shi (da zunubi) ya yi asara. <br>
+  <span class="aya-num">11</span> (Mutanen) Samudawa sun karyata saboda ketare haddinsu. <br>
+  <span class="aya-num">12</span> Sa'ad da mafi rishin albarkarsu ya tashi (don ya kashe rakumar). <br>
+  <span class="aya-num">13</span> Sai Manzon Allah (Annabi Salihu) ya ce musu: "Ku kyale rakumar Allah da abin shan ta." <br>
+  <span class="aya-num">14</span> Sai suka karyata shi, suka soke ta; sai Ubangijinka Ya darkake su saboda zunubinsu, sannan Ya daidaita ta (halakar a kansu). <br>
+  <span class="aya-num">15</span> Kuma Shi (Allah) ba Ya tsoron sakamakon halakar.
+</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-BALAD -->
+<div id="surah-balad" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-balad'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('balad.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Balad</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        لَا أُقْسِمُ بِهَذَا الْبَلَدِ (١) وَأَنْتَ حِلٌّ بِهَذَا الْبَلَدِ (٢) وَوَالِدٍ وَمَا وَلَدَ (٣) لَقَدْ خَلَقْنَا الْإِنْسَانَ فِي كَبَدٍ (٤) ... 
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Ina rantsuwa da wannan gari (Makkah). <br>
+  <span class="aya-num">2</span> Alhalin kai (Manzo) kana zaune a cikin wannan gari. <br>
+  <span class="aya-num">3</span> Da uba (Annabi Adam) da abin da ya haifa. <br>
+  <span class="aya-num">4</span> Lallai Mun halicci mutum a cikin wahala da wahalhalu. <br>
+  <span class="aya-num">5</span> Shin yana zaton cewa babu wanda ke da iko a kansa? <br>
+  <span class="aya-num">6</span> Yana cewa: "Na cinye dukiya mai yawa." <br>
+  <span class="aya-num">7</span> Shin yana zaton cewa babu wanda ya gan shi? <br>
+  <span class="aya-num">8</span> Shin ba Mu sanya masa idanu guda biyu ba? <br>
+  <span class="aya-num">9</span> Da harshe da kuma leɓuna guda biyu? <br>
+  <span class="aya-num">10</span> Kuma Mun nuna masa hanyoyi guda biyu (na alheri da na sharri)? <br>
+  <span class="aya-num">11</span> Amma bai kutsa (shawo kan) babbar hanyar nan ba. <br>
+  <span class="aya-num">12</span> Me ya sanar da kai mene ne kutsa babbar hanyar? <br>
+  <span class="aya-num">13</span> Ita ce 'yanta wuya (bawa). <br>
+  <span class="aya-num">14</span> Ko kuma ciyarwa a ranar yunwa. <br>
+  <span class="aya-num">15</span> Ga maraya mai zumunta. <br>
+  <span class="aya-num">16</span> Ko matalaci mai kura. <br>
+  <span class="aya-num">17</span> Bayan haka ya kasance daga waɗanda suka yi imani, suka yi wasiyya da juriya, suka kuma yi wasiyya da tausayi. <br>
+  <span class="aya-num">18</span> Waɗannan su ne mutanen dama (masu albarka). <br>
+  <span class="aya-num">19</span> Waɗanda kuwa suka kafirce wa ayoyinmu, su ne mutanen hagu. <br>
+  <span class="aya-num">20</span> Akwai wuta wacce aka rurrufe (ta kowane fanni) a kansu.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-GHASHIYAH -->
+<div id="surah-ghashiya" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-ghashiya'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('ghashiya.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Ghashiya</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        هَلْ أَتَاكَ حَدِيثُ الْغَاشِيَةِ (١) وُجُوهٌ يَوْمَئِذٍ خَاشِعَةٌ (٢) عَامِلَةٌ نَاصِبَةٌ (٣) تَصْلَى نَارًا حَامِيَةً (٤)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Lalle ne labarin (kiyama) mai rufe mutane da tsoronta ya zo maka? <br>
+  <span class="aya-num">2</span> Wasu huskoki a ranar nan kaskantattu ne. <br>
+  <span class="aya-num">3</span> Masu aikin wahala ne, masu gajiya. <br>
+  <span class="aya-num">4</span> Za su shiga wata wuta mai zafi. <br>
+  <span class="aya-num">5</span> Ana shayar da su daga wani marmaro mai zafin ruwa. <br>
+  <span class="aya-num">6</span> Ba su da wani abinci face dai daga danyi (kayoyi). <br>
+  <span class="aya-num">7</span> Ba ya sanya kiba, kuma ba zai wadatar daga yunwa ba. <br>
+  <span class="aya-num">8</span> Wasu huskoki a ranar nan masu ni'ima ne. <br>
+  <span class="aya-num">9</span> Game da aikinsu (na duniya), masu yarda ne. <br>
+  <span class="aya-num">10</span> (Suna) a cikin Aljanna madaukakiya. <br>
+  <span class="aya-num">11</span> Ba za su ji yasassar magana ba a cikinta. <br>
+  <span class="aya-num">12</span> A cikinta akwai marmaro mai gudana. <br>
+  <span class="aya-num">13</span> A cikinta akwai gadaje madaukaka. <br>
+  <span class="aya-num">14</span> Da kofuna ar'aje (an ajiye su). <br>
+  <span class="aya-num">15</span> Da filoli jere (an jera su). <br>
+  <span class="aya-num">16</span> Da katifu shimfide. <br>
+  <span class="aya-num">17</span> Ashe to ba za su duba ba ga rakuma yadda aka halitta su? <br>
+  <span class="aya-num">18</span> Da zuwa ga sama yadda aka daukaka ta? <br>
+  <span class="aya-num">19</span> Da zuwa ga duwatsu yadda aka dasa su? <br>
+  <span class="aya-num">20</span> Da zuwa ga kasa yadda aka shimfida ta? <br>
+  <span class="aya-num">21</span> Saboda haka, ka yi gargadi; domin kai mai gargadi ne kawai. <br>
+  <span class="aya-num">22</span> Ba kai ne mai lura da su (kana tilasta musu) ba. <br>
+  <span class="aya-num">23</span> Sai dai wanda ya juya baya, ya kafirce. <br>
+  <span class="aya-num">24</span> To, Allah zai yi masa azaba, azaba mafi girma. <br>
+  <span class="aya-num">25</span> Lalle zuwa gare Mu kawai makomarsu take. <br>
+  <span class="aya-num">26</span> Sannan lalle lissafinsu yana kanmu.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-FAJR -->
+<div id="surah-fajr" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-fajr'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('fajr.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Fajr</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالْفَجْرِ (١) وَلَيَالٍ عَشْرٍ (٢) وَالشَّفْعِ وَالْوَتْرِ (٣) وَاللَّيْلِ إِذَا يَسْرِ (٤) هَلْ فِي ذَلِكَ قَسَمٌ لِذِي حِجْرٍ (٥) أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ (٦) إِرَمَ ذَاتِ الْعِمَادِ (٧) الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ (٨) وَثَمُودَ الَّذِينَ جَابُوا الصَّخْرَ بِالْوَادِ (٩) وَفِرْعَوْنَ ذِي الْأَوْتَادِ (١٠) الَّذِينَ طَغَوْا فِي الْبِلَادِ (١١) فَأَكْثَرُوا فِيهَا الْفَسَادَ (١٢) فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ (١٣) إِنَّ رَبَّكَ لَبِالْمِرْصَادِ (١٤) فَأَمَّا الْإِنْسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ (١٥) وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ (١٦) كَلَّا بَلْ لَا تُكْرِمُونَ الْيَتِيمَ (١٧) وَلَا تَحَاضُّونَ عَلَى طَعَامِ الْمِسْكِينِ (١٨) وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَمًّا (١٩) وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا (٢٠) كَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا (٢١) وَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا (٢٢) وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنْسَانُ وَأَنَّى لَهُ الذِّكْرَى (٢٣) يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي (٢٤) فَيَوْمَئِذٍ لَا يُعَذِّبُ عَذَابَهُ أَحَدٌ (٢٥) وَلَا يُوثِقُ وَثَاقَهُ أَحَدٌ (٢٦) يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ (٢٧) ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَرْضِيَّةً (٢٨) فَادْخُلِي فِي عِبَادِي (٢٩) وَادْخُلِي جَنَّتِي (٣٠)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Ina rantsuwa da alfajiri. <br>
+  <span class="aya-num">2</span> Da darare guda goma (na farkon watan Zul-Hijjah). <br>
+  <span class="aya-num">3</span> Da abin da yake ninki da abin da yake guda (daidai da maras daidai). <br>
+  <span class="aya-num">4</span> Da dare idan yana tafiya. <br>
+  <span class="aya-num">5</span> Shin a cikin waccan (rantsuwar) akwai rantsuwa ga mai hankali? <br>
+  <span class="aya-num">6</span> Shin ba ka ga yadda Ubangijinka Ya yi da (mutanen) ʿAd ba? <br>
+  <span class="aya-num">7</span> Mutanen Irama, ma'abuta dogayen ginshiƙai. <br>
+  <span class="aya-num">8</span> Waɗanda ba a halicci irinsu ba a cikin garuruwa. <br>
+  <span class="aya-num">9</span> Da Samudawa waɗanda suka sassaki duwatsu a cikin kwararo. <br>
+  <span class="aya-num">10</span> Da Fir'auna ma'abucin turaku (ko runduna). <br>
+  <span class="aya-num">11</span> Waɗanda suka ƙetare haddi a cikin garuruwa. <br>
+  <span class="aya-num">12</span> Suka awaited ɓarna mai yawa a ciki. <br>
+  <span class="aya-num">13</span> Sai Ubangijinka Ya kwarara musu kalar azaba dabam-dabam. <br>
+  <span class="aya-num">14</span> Lallai Ubangijinka yana kan jiran (halittunSa). <br>
+  <span class="aya-num">15</span> Shi kuwa mutum, idan Ubangijinsa ya jarrabe shi, ya girmama shi, ya kuma ni'imta shi, sai ya ce: "Ubangijina ya girmama ni." <br>
+  <span class="aya-num">16</span> Amma idan Ya jarrabe shi, Ya takaita masa arzikinsa, sai ya ce: "Ubangijina ya tozarta ni." <br>
+  <span class="aya-num">17</span> A'a! Kuma ma dai ba kwa girmama maraya. <br>
+  <span class="aya-num">18</span> Kuma ba kwa kwadaitarwa a kan ciyar da matalaci. <br>
+  <span class="aya-num">19</span> Kuma kuna cin gadon (marayu da mata) ci na zalunci. <br>
+  <span class="aya-num">20</span> Kuma kuna son dukiya so mai yawa. <br>
+  <span class="aya-num">21</span> A'a! Idan aka niƙe ƙasa niƙe-niƙe. <br>
+  <span class="aya-num">22</span> Ubangijinka Ya zo, Mala'iku kuma suna jere-jere. <br>
+  <span class="aya-num">23</span> Kuma aka kawo Jahannama a ranar nan, rannan mutum zai tuna, amma tunawa za ta amfane shi? <br>
+  <span class="aya-num">24</span> Yana cewa: "Ina ma na gabatar da (alheri) don rayuwata ta yau." <br>
+  <span class="aya-num">25</span> To, a ranar nan babu mai yin azaba irin azabar Allah. <br>
+  <span class="aya-num">26</span> Kuma babu mai yin daurin irin daurinSa. <br>
+  <span class="aya-num">27</span> Ya ke kwanciyar hankali (rai mai natsuwa)! <br>
+  <span class="aya-num">28</span> Koma zuwa ga Ubangijinki kina yardacciya, abin yarda. <br>
+  <span class="aya-num">29</span> Ki shiga cikin bayina. <br>
+  <span class="aya-num">30</span> Kuma ki shiga Aljannata.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-A'LA -->
+<div id="surah-aala" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-aala'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('aala.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul A'ala</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        سَبِّحِ اسْمَ رَبِّكَ الْأَعْلَى (١) الَّذِي خَلَقَ فَسَوَّى (٢) وَالَّذِي قَدَّرَ فَهَدَى (٣) وَالَّذِي أَخْرَجَ الْمَرْعَى (٤) فَجَعَلَهُ غُثَاءً أَحْوَى (٥) سَنُقْرِئُكَ فَلَا تَنْسَى (٦) إِلَّا مَا شَاءَ اللَّهُ إِنَّهُ يَعْلَمُ الْجَهْرَ وَمَا يَخْفَى (٧) وَنُيَسِّرُكَ لِلْيُسْرَى (٨) فَذَكِّرْ إِنْ نَفَعَتِ الذِّكْرَى (٩) سَيَذَّكَّرُ مَنْ يَخْشَى (١٠) وَيَتَجَنَّبُهَا الْأَشْقَى (١١) الَّذِي يَصْلَى النَّارَ الْكُبْرَى (١٢) ثُم__َّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَى (١٣) قَدْ أَفْلَحَ مَنْ تَزَكَّى (١٤) وَذَكَرَ اسْمَ رَبِّهِ فَصَلَّى (١٥) بَلْ تُؤْثِرُونَ الْحَيَاةَ الدُّنْيَا (١٦) وَالْآخِرَةُ خَيْرٌ وَأَبْقَى (١٧) إِنَّ هَذَا لَفِي الصُّحُفِ الْأُولَى (١٨) صُحُفِ إِبْرَاهِيمَ وَمُوسَى (١٩)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Ka tsarkake sunan Ubangijinka Mafi daukaka. <br>
+  <span class="aya-num">2</span> Wanda Ya yi halitta, sa'an nan Ya daidaita ta. <br>
+  <span class="aya-num">3</span> Da Wanda Ya kaddara (komai), sa'an nan Ya shiryar (da kowa). <br>
+  <span class="aya-num">4</span> Da Wanda Ya fitar da makiyaya (tsirrai). <br>
+  <span class="aya-num">5</span> Sa'an nan Ya sanya shi ya zama busasshen bakin abu. <br>
+  <span class="aya-num">6</span> Za Mu karantar da kai (Alkur'ani), saboda haka ba za ka manta ba. <br>
+  <span class="aya-num">7</span> Sai dai abin da Allah Ya so; lallai Shi Ya san bayyane da abin da yake boye. <br>
+  <span class="aya-num">8</span> Kuma za Mu saukaka maka (hanya) zuwa ga sauki. <br>
+  <span class="aya-num">9</span> Saboda haka ka yi wa'azi idan wa'azi zai amfane su. <br>
+  <span class="aya-num">10</span> Wanda yake tsoron Allah zai karba. <br>
+  <span class="aya-num">11</span> Amma mafi rishin albarka zai nesance shi. <br>
+  <span class="aya-num">12</span> Wanda zai shiga wuta mafi girma. <br>
+  <span class="aya-num">13</span> Sannan ba zai mutu a cikinta ba, kuma ba zai rayu (rayuwa mai dadi) ba. <br>
+  <span class="aya-num">14</span> Lallai wanda ya tsarkaka (daga kafirci) ya rabauta. <br>
+  <span class="aya-num">15</span> Ya kuma ambaci sunan Ubangijinsa, sa'an nan ya yi salla. <br>
+  <span class="aya-num">16</span> Amma kuka gwammace rayuwar duniya. <br>
+  <span class="aya-num">17</span> Alhali Lahira ita ce mafi alheri, kuma mafi dawwama. <br>
+  <span class="aya-num">18</span> Lallai wannan (wa'azin) yana cikin takardun farko. <br>
+  <span class="aya-num">19</span> Takardun Ibrahim da Musa.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- AT-TARIQ -->
+<div id="surah-tariq" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-tariq'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('tariq.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratut Tariq</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالسَّمَاءِ وَالطَّارِقِ (١) وَمَا أَدْرَاكَ مَا الطَّارِقُ (٢) النَّجْمُ الثَّاقِبُ (٣) إِنْ كُلُّ نَفْسٍ لَمَّا عَلَيْهَا حَافِظٌ (٤) فَلْيَنْظُرِ الْإِنْسَانُ مِمَّ خُلِقَ (٥) خُلِقَ مِنْ مَاءٍ دَافِقٍ (٦) يَخْرُجُ مِنْ بَيْنِ الصُّلْبِ وَالتَّرَائِبِ (٧) إِنَّهُ عَلَى رَجْعِهِ لَقَادِرٌ (٨) يَوْمَ تُبْلَى السَّرَائِرُ (٩) فَمَا لَهُ مِنْ قُوَّةٍ وَلَا نَاصِرٍ (١٠) وَالسَّمَاءِ ذَاتِ الرَّجْعِ (١١) وَالْأَرْضِ ذَاتِ الصَّدْعِ (١٢) إِنَّهُ لَقَوْلٌ فَصْلٌ (١٣) وَمَا هُوَ بِالْهَزْلِ (١٤) إِنَّهُمْ يَكِيدُونَ كَيْدًا (١٥) وَأَكِيدُ كَيْدًا (١٦) فَمَهِّلِ الْكَافِرِينَ أَمْهِلْهُمْ رُوَيْدًا (١٧)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Ina rantsuwa da sama da kuma mai zuwa da dare (Tariq). <br>
+  <span class="aya-num">2</span> Me ya sanar da kai mene ne Tariq? <br>
+  <span class="aya-num">3</span> Shi ne tauraro mai huda duhu (da haskensa). <br>
+  <span class="aya-num">4</span> Babu wani rai face akwai mai tsaro (Mala'ika) a kansa. <br>
+  <span class="aya-num">5</span> Sai mutum ya duba daga mene ne aka halicce shi? <br>
+  <span class="aya-num">6</span> An halicce shi daga wani ruwa mai tsartuwa. <br>
+  <span class="aya-num">7</span> Wanda yake fita daga tsakanin tsatso da hakarkarinsa. <br>
+  <span class="aya-num">8</span> Lallai Shi (Allah) Mai iko ne a kan mayar da shi (bayan mutuwarsa). <br>
+  <span class="aya-num">9</span> Ranar da za a jarraba asirai (na boye). <br>
+  <span class="aya-num">10</span> To, (mutum) ba shi da wani karfi, kuma ba shi da wani mai taimako. <br>
+  <span class="aya-num">11</span> Ina rantsuwa da sama ma'abuciyar daidaituwa (ko ruwa). <br>
+  <span class="aya-num">12</span> Da kasa ma'abuciyar tsagewa (don tsirrai su fito). <br>
+  <span class="aya-num">13</span> Lallai shi (Alkur'ani) magana ce mai rarrabe (tsakanin gaskiya da karya). <br>
+  <span class="aya-num">14</span> Kuma shi ba abin wasa ba ne. <br>
+  <span class="aya-num">15</span> Lallai su (kafirai) suna kulla makirci sosai. <br>
+  <span class="aya-num">16</span> Kuma Ina kulla wani sakamako (na kwarai). <br>
+  <span class="aya-num">17</span> Saboda haka, ka dakatar da kafirai; ka kyale su na dan lokaci kadan.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- AL-BURUJ -->
+<div id="surah-buruj" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-buruj'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('buruj.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Buruj</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالسَّمَاءِ ذَاتِ الْبُرُوجِ (١) وَالْيَوْمِ الْمَوْعُودِ (٢) وَشَاهِدٍ وَمَشْهُودٍ (٣) قُتِلَ أَصْحَابُ الْأُخْدُودِ (٤) النَّارِ ذَاتِ الْوَقُودِ (٥) إِذْ هُمْ عَلَيْهَا قُعُودٌ (٦) وَهُمْ عَلَى مَا يَفْعَلُونَ بِالْمُؤْمِنِينَ شُهُودٌ (٧) وَمَا نَقَمُوا مِنْهُمْ إِلَّا أَنْ يُؤْمِنُوا بِاللَّهِ الْعَزِيزِ الْحَمِيدِ (٨) الَّذِي لَهُ مُلْكُ السَّمَاوَاتِ وَالْأَرْضِ وَاللَّهُ عَلَى كُلِّ شَيْءٍ شَهِيدٌ (٩) إِنَّ الَّذِينَ فَتَنُوا الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ ثُمَّ لَمْ يَتُوبُوا فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ الْحَرِيقِ (١٠) إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ جَنَّاتٌ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ ذَلِكَ الْفَوْزُ الْكَبِيرُ (١١) إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ (١٢) إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ (١٣) وَهُوَ الْغَفُورُ الْوَدُودُ (١٤) ذُو الْعَرْشِ الْمَجِيدُ (١٥) فَعَّالٌ لِمَا يُرِيدُ (١٦) هَلْ أَتَاكَ حَدِيثُ الْجُنُودِ (١٧) فِرْعَوْنَ وَثَمُودَ (١٨) بَلِ الَّذِينَ كَفَرُوا فِي تَكْذِيبٍ (١٩) وَاللَّهُ مِنْ وَرَائِهِمْ مُحِيطٌ (٢٠) بَلْ هُوَ قُرْآنٌ مَجِيدٌ (٢١) فِي لَوْحٍ مَحْفُوظٍ (٢٢)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Ina rantsuwa da sama ma'abuciyar gidajen taurari. <br>
+  <span class="aya-num">2</span> Da ranar da aka yi alkawari (Kiyama). <br>
+  <span class="aya-num">3</span> Da mai sheda da abin da ake shedawa. <br>
+  <span class="aya-num">4</span> An tsine wa mutanen rami (Ukhdudu). <br>
+  <span class="aya-num">5</span> Wuta ma'abuciyar makamashi. <br>
+  <span class="aya-num">6</span> Sa'ad da suke zaune a kanta. <br>
+  <span class="aya-num">7</span> Kuma su halartattu ne a kan abin da suke aikatawa ga muminai. <br>
+  <span class="aya-num">8</span> Ba su muzanta musu ba face kawai don sun yi imani da Allah Mabuwayi, Godadde. <br>
+  <span class="aya-num">9</span> Wanda mallakar sammai da kasa Tasa ce, kuma Allah Shaidu ne a kan kowane abu. <br>
+  <span class="aya-num">10</span> Lallai wadanda suka jarrabi muminai maza da mata, sa'an nan ba su tuba ba, to suna da azabar Jahannama, kuma suna da azabar gobara. <br>
+  <span class="aya-num">11</span> Lallai wadanda suka yi imani suka aikata ayyukan kwarai, suna da gidajen Aljanna wadanda koramu ke gudana a karkashinsu; wancan ne rabo babba. <br>
+  <span class="aya-num">12</span> Lallai damkar Ubangijinka tana da tsanani. <br>
+  <span class="aya-num">13</span> Lallai Shi ne Yake farawa (halitta) kuma Yake mayarwa. <br>
+  <span class="aya-num">14</span> Kuma Shi ne Mai gafara, Mai yawan so. <br>
+  <span class="aya-num">15</span> Ma'abucin Al'arshi Mai girma. <br>
+  <span class="aya-num">16</span> Mai aikata abin da Yake so. <br>
+  <span class="aya-num">17</span> Shin labarin rundunoni ya zo maka? <br>
+  <span class="aya-num">18</span> Na Fir'auna da Samudawa? <br>
+  <span class="aya-num">19</span> A'a! Wadanda suka kafirce suna cikin karyatawa. <br>
+  <span class="aya-num">20</span> Kuma Allah daga bayansu Mai kewayewa ne da su. <br>
+  <span class="aya-num">21</span> A'a! Shi (wannan) Alkur'ani ne mai girma. <br>
+  <span class="aya-num">22</span> A cikin allo (Lauhul Mahfuz) wanda ake kiyayewa.
+</p>
+
+    </div>
+  </div>
+</div>
+<!-- Suratul inshiqaq -->
+ <div id="surah-inshiqaq" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-inshiqaq'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('inshiqaq.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Inshiqaq</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        إِذَا السَّمَاءُ انْشَقَّتْ (١) وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ (٢) وَإِذَا الْأَرْضُ مُدَّتْ (٣) وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ (٤) وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ (٥) يَا أَيُّهَا الْإِنْسَانُ إِنَّكَ كَادِحٌ إِلَى رَبِّكَ كَدْحًا فَمَلَاقِيهِ (٦) فَأَمَّا مَنْ أُوتِيَ كِتَابَهُ بِيَمِينِهِ (٧) فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا (٨) وَيَنْقَلِبُ إِلَى أَهْلِهِ مَسْرُورًا (٩) وَأَمَّا مَنْ أُوتِيَ كِتَابَهُ وَرَاءَ ظَهْرِهِ (١٠) فَسَوْفَ يَدْعُو ثُبُورًا (١١) وَيَصْلَى سَعِيرًا (١٢) إِنَّهُ كَانَ فِي أَهْلِهِ مَسْرُورًا (١٣) إِنَّهُ ظَنَّ أَنْ لَنْ يَحُورَ (١٤) بَلَى إِنَّ رَبَّهُ كَانَ بِهِ بَصِيرًا (١٥) فَلَا أُقْسِمُ بِالشَّفَقِ (١٦) وَاللَّيْلِ وَمَا وَسَقَ (١٧) وَالْقَمَرِ إِذَا اتَّسَقَ (١٨) لَتَرْكَبُنَّ طَبَقًا عَنْ طَبَقٍ (١٩) فَمَا لَهُمْ لَا يُؤْمِنُونَ (٢٠) وَإِذَا قُرِئَ عَلَيْهِمُ الْقُرْآنُ لَا يَسْجُدُونَ ۩ (٢١) بَلِ الَّذِينَ كَفَرُوا يُكَذِّبُكَ (٢٢) وَاللَّهُ أَعْلَمُ بِمَا يُوعُونَ (٢٣) فَبَشِّرْهُمْ بِعَذَابٍ أَلِيمٍ (٢٤) إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍ (٢٥)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+     <p class="hausa-text">
+  <span class="aya-num">1</span> Idan sama ta tsage. <br>
+  <span class="aya-num">2</span> Ta kuma ji maganar Ubangijinta, kuma aka wajabta mata. <br>
+  <span class="aya-num">3</span> Kuma idan aka mika kasa (aka shimfida ta). <br>
+  <span class="aya-num">4</span> Ta kuma jefar da abin da ke cikinta, ta kofanta. <br>
+  <span class="aya-num">5</span> Ta kuma ji maganar Ubangijinta, kuma aka wajabta mata. <br>
+  <span class="aya-num">6</span> Ya kai mutum! Lallai kai mai kokari ne zuwa ga Ubangijinka kokari mai tsanani, sa'an nan za ka hadu da Shi. <br>
+  <span class="aya-num">7</span> Amma wanda aka ba shi littafinsa ta damansa. <br>
+  <span class="aya-num">8</span> To, za a yi masa lissafi, lissafi mai sauki. <br>
+  <span class="aya-num">9</span> Kuma zai koma zuwa ga mutanensa (a Aljanna) yana mai farin ciki. <br>
+  <span class="aya-num">10</span> Amma wanda aka ba shi littafinsa ta bayan bayansa. <br>
+  <span class="aya-num">11</span> To, nan gaba zai kira halaka. <br>
+  <span class="aya-num">12</span> Kuma zai shiga wuta mai ruri. <br>
+  <span class="aya-num">13</span> Lallai shi ya kasance a cikin mutanensa (duniya) yana mai farin ciki (da kafirci). <br>
+  <span class="aya-num">14</span> Lallai ya yi zaton cewa ba zai taba komawa (ga Allah) ba. <br>
+  <span class="aya-num">15</span> Na'am! Lallai Ubangijinsa Ya kasance Mai ganinsa ne. <br>
+  <span class="aya-num">16</span> To, ba sai Na yi rantsuwa da jan lura (shafaki) ba. <br>
+  <span class="aya-num">17</span> Da dare da abin da ya tattara. <br>
+  <span class="aya-num">18</span> Da wata idan ya cika (ya yi kewaye). <br>
+  <span class="aya-num">19</span> Lallai za ku hau wani mataki bayan wani mataki. <br>
+  <span class="aya-num">20</span> To, me ya same su ba sa yin imani? <br>
+  <span class="aya-num">21</span> Kuma idan aka karanta musu Alkur'ani ba sa yin sujada? <br>
+  <span class="aya-num">22</span> A'a! Wadanda suka kafirce karyatawa suke yi. <br>
+  <span class="aya-num">23</span> Kuma Allah ne mafi sani da abin da suke tara (a zukatansu). <br>
+  <span class="aya-num">24</span> Saboda haka ka yi musu bushara da azaba mai radadi. <br>
+  <span class="aya-num">25</span> Sai dai wadanda suka yi imani suka aikata ayyukan kwarai; suna da lada wanda ba ya yankewa.
+</p>
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Suratul Mutaffifin -->
+<div id="surah-mutaffifin" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-mutaffifin'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('mutaffifin.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Mutaffifin</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَيْلٌ لِلْمُطَفِّفِينَ (١) الَّذِينَ إِذَا اكْتَالُوا عَلَى النَّاسِ يَسْتَوْفُونَ (٢) وَإِذَا كَالُوهُمْ أَوْ وَزَنُوهُمْ يُخْسِرُونَ (٣) أَلَا يَظُنُّ أُولَئِكَ أَنَّهُمْ مَبْعُوثُونَ (٤) لِيَوْمٍ عَظِيمٍ (٥) يَوْمَ يَقُومُ النَّاسُ لِرَبِّ الْعَالَمِينَ (٦) كَلَّا إِنَّ كِتَابَ الْفُجَّارِ لَفِي سِجِّينٍ (٧) وَمَا أَدْرَاكَ مَا سِجِّينٌ (٨) كِتَابٌ مَرْقُومٌ (٩) وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ (١٠) الَّذِينَ يُكَذِّبُونَ بِيَوْمِ الدِّينِ (١١) وَمَا يُكَذِّبُ بِهِ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ (١٢) إِذَا تُتْلَى عَلَيْهِ آيَاتُنَا قَالَ أَسَاطِيرُ الْأَوَّلِينَ (١٣) كَلَّا بَلْ رَانَ عَلَى قُلُوبِهِمْ مَا كَانُوا يَكْسِبُونَ (١٤) كَلَّا إِنَّهُمْ عَنْ رَبِّهِمْ يَوْمَئِذٍ لَمَحْجُوبُونَ (١٥) ثُمَّ إِنَّهُمْ لَصَالُو الْجَحِيمِ (١٦) ثُمَّ يُقَالُ هَذَا الَّذِي كُنْتُمْ بِهِ تُكَذِّبُونَ (١٧) كَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ (١٨) وَمَا أَدْرَاكَ مَا عِلِّيُّونَ (١٩) كِتَابٌ مَرْقُومٌ (٢٠) يَشْهَدُهُ الْمُقَرَّبُونَ (٢١) إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ (٢٢) عَلَى الْأَرَائِكِ يَنْظُرُونَ (٢٣) تَعْرِفُ فِي وُجُوهِهِمْ نَضْرَةَ النَّعِيمِ (٢٤) يُسْقَوْنَ مِنْ رَحِيقٍ مَخْتُومٍ (٢٥) خِتَامُهُ مِسْكٌ وَفِي ذَلِكَ فَلْيَتَنَافَسِ الْمُتَنَافِسُونَ (٢٦) وَمِزَاجُهُ مِنْ تَسْنِيمٍ (٢٧) عَيْنًا يَشْرَبُ بِهَا الْمُقَرَّبُونَ (٢٨) إِنَّ الَّذِينَ أَجْرَمُوا كَانُوا مِنَ الَّذِينَ آمَنُوا يَضْحَكُونَ (٢٩) وَإِذَا مَرُّوا بِهِمْ يَتَغَامَزُونَ (٣٠) وَإِذَا انْقَلَبُوا إِلَى أَهْلِهِمُ انْقَلَبُوا فَكِهِينَ (٣١) وَإِذَا رَأَوْهُمْ قَالُوا إِنَّ هَؤُلَاءِ لَضَالُّونَ (٣٢) وَمَا أُرْسِلُوا عَلَيْهِمْ حَافِظِينَ (٣٣) فَالْيَوْمَ الَّذِينَ آمَنُوا مِنَ الْكُفَّارِ يَضْحَكُونَ (٣٤) عَلَى الْأَرَائِكِ يَنْظُرُونَ (٣٥) هَلْ ثُوِّبَ الْكُفَّارُ مَا كَانُوا يَفْعَلُونَ (٣٦)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+      <p class="hausa-text">
+  <span class="aya-num">1</span> Kaiton wadanda suke rage mudu (da ma'auni). <br>
+  <span class="aya-num">2</span> Wadanda idan suka yi auna a wajen mutane, sukan cika (ma'auninsu). <br>
+  <span class="aya-num">3</span> Amma idan suka auna musu, ko suka yi musu mudu, sai su rage. <br>
+  <span class="aya-num">4</span> Shin wadannan ba su zaton cewa lallai su wadanda za a tayar ne? <br>
+  <span class="aya-num">5</span> Zuwa ga wata rana mai girma. <br>
+  <span class="aya-num">6</span> Ranar da mutane za su tashi tsaye domin Ubangijin talikai. <br>
+  <span class="aya-num">7</span> A'a! Lallai littafin fajirai yana cikin Sijjin. <br>
+  <span class="aya-num">8</span> Me ya sanar da kai mene ne Sijjin? <br>
+  <span class="aya-num">9</span> Littafi ne wanda aka rubuta (aka kuma hatimce). <br>
+  <span class="aya-num">10</span> Kaiton wadanda suke karyatawa a ranar nan. <br>
+  <span class="aya-num">11</span> Wadanda suke karyata ranar sakamako. <br>
+  <span class="aya-num">12</span> Babu mai karyata ta sai kowane mai wuce haddi, mai yawan zunubi. <br>
+  <span class="aya-num">13</span> Idan ana karanta masa ayoyinmu, sai ya ce: "Tatsuniyoyin mutanen farko ne." <br>
+  <span class="aya-num">14</span> A'a! Abin da suka kasance suna aikatawa ya yi tsatsa a kan zukatansu. <br>
+  <span class="aya-num">15</span> A'a! Lallai su a ranar nan, an katange su daga (ganin) Ubangijinsu. <br>
+  <span class="aya-num">16</span> Sannan lallai su, masu shiga wuta ne. <br>
+  <span class="aya-num">17</span> Sannan a ce musu: "Wannan shi ne abin da kuka kasance kuna karyatawa." <br>
+  <span class="aya-num">18</span> A'a! Lallai littafin mutanen kwarai yana cikin Illiyyin. <br>
+  <span class="aya-num">19</span> Me ya sanar da kai mene ne Illiyyin? <br>
+  <span class="aya-num">20</span> Littafi ne wanda aka rubuta. <br>
+  <span class="aya-num">21</span> Mala'iku makusanta (ga Allah) suna shaida shi. <br>
+  <span class="aya-num">22</span> Lallai mutanen kwarai suna cikin ni'ima. <br>
+  <span class="aya-num">23</span> Suna kan gadaje suna kallo. <br>
+  <span class="aya-num">24</span> Za ka gane annurin ni'ima a cikin fuskokinsu. <br>
+  <span class="aya-num">25</span> Ana shayar da su wani ingantaccen abin sha (giya) wanda aka rufe. <br>
+  <span class="aya-num">26</span> Rufinsa miski ne; kuma a kan haka (ni'imar) masu rige-rige su yi rige-rige. <br>
+  <span class="aya-num">27</span> Kuma hadinsa daga Tasnim ne. <br>
+  <span class="aya-num">28</span> Wani marmaro ne wanda makusanta (ga Allah) suke sha daga gare shi. <br>
+  <span class="aya-num">29</span> Lallai wadanda suka yi laifi, sun kasance suna yi wa wadanda suka yi imani dariya. <br>
+  <span class="aya-num">30</span> Kuma idan sun ratsa ta wajensu, sukan kyamace su (suna fakar idanu). <br>
+  <span class="aya-num">31</span> Kuma idan suka koma ga iyalansu, sukan koma suna fadin abubuwan alfahari. <br>
+  <span class="aya-num">32</span> Kuma idan suka gani (muminai), sai su ce: "Lallai wadannan batattu ne." <br>
+  <span class="aya-num">33</span> Alhali ba a aiko su don su zama masu tsaro a kansu ba. <br>
+  <span class="aya-num">34</span> To, a yau wadanda suka yi imani dariya suke yi wa kafirai. <br>
+  <span class="aya-num">35</span> Suna kan gadaje suna kallo. <br>
+  <span class="aya-num">36</span> Shin an saka wa kafirai abin da suka kasance suna aikatawa?
+</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-----infitar---->
+<div id="surah-infitar" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-infitar'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('infitar.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratul Infitar</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        إِذَا السَّمَاءُ انْفَطَرَتْ (١) وَإِذَا الْكَوَاكِبُ انْتَثَرَتْ (٢) وَإِذَا الْبِحَارُ فُجِّرَتْ (٣) وَإِذَا الْقُبُورُ بُعْثِرَتْ (٤) عَلِمَتْ نَفْسٌ مَا قَدَّمَتْ وَأَخَّرَتْ (٥) يَا أَيُّهَا الْإِنْسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ (٦) الَّذِي خَلَقَكَ فَسَوَّاكَ فَعَدَلَكَ (٧) فِي أَيِّ صُورَةٍ مَا شَاءَ رَكَّبَكَ (٨) كَلَّا بَلْ تُكَذِّبُونَ بِالدِّينِ (٩) وَإِنَّ عَلَيْكُمْ لَحَافِظِينَ (١٠) كِرَامًا كَاتِبِينَ (١١) يَعْلَمُونَ مَا تَفْعَلُونَ (١٢) إِنَّ الْأَبْرَارَ لَفِي نَعِيمٍ (١٣) وَإِنَّ الْفُجَّارَ لَفِي جَحِيمٍ (١٤) يَصْلَوْنَهَا يَوْمَ الدِّينِ (١٥) وَمَا هُمْ عَنْهَا بِغَائِبِينَ (١٦) وَمَا أَدْرَاكَ مَا يَوْمُ الدِّينِ (١٧) ثُمَّ مَا أَدْرَاكَ مَا يَوْمُ الدِّينِ (١٨) يَوْمَ لَا تَمْلِكُ نَفْسٌ لِنَفْسٍ شَيْئًا وَالْأَمْرُ يَوْمَئِذٍ لِلَّهِ (١٩)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+<p class="hausa-text">
+  <span class="aya-num">1</span> Idan sama ta tsage. <br>
+  <span class="aya-num">2</span> Idan taurari suka watse. <br>
+  <span class="aya-num">3</span> Idan teku suka malale (suka haɗe). <br>
+  <span class="aya-num">4</span> Idan aka hure kaburbura (aka tada matattu). <br>
+  <span class="aya-num">5</span> Kowane rai zai san abin da ya gabatar da wanda ya jinkirta. <br>
+  <span class="aya-num">6</span> Ya kai mutum! Me ya yaudare ka game da Ubangijinka Mai karramawa? <br>
+  <span class="aya-num">7</span> Wanda Ya halicce ka, Ya daidaita ka, sa'an nan Ya kintata ka. <br>
+  <span class="aya-num">8</span> A cikin kowace siffa da Ya so, Ya hada ka. <br>
+  <span class="aya-num">9</span> A'a! Kuma ma dai kuna karyata sakamako (na kiyama). <br>
+  <span class="aya-num">10</span> Alhali lallai akwai masu tsaro (Mala'iku) a kanku. <br>
+  <span class="aya-num">11</span> Masu daraja, masu rubutu. <br>
+  <span class="aya-num">12</span> Suna sanin abin da kuke aikatawa. <br>
+  <span class="aya-num">13</span> Lallai mutanen kwarai suna cikin ni'ima. <br>
+  <span class="aya-num">14</span> Kuma lallai fajirai suna cikin wutar Jahannama. <br>
+  <span class="aya-num">15</span> Za su shige ta a ranar sakamako. <br>
+  <span class="aya-num">16</span> Kuma su ba wadanda za su faku daga gare ta ba ne. <br>
+  <span class="aya-num">17</span> Kuma me ya sanar da kai mene ne ranar sakamako? <br>
+  <span class="aya-num">18</span> Sannan kuma me ya sanar da kai mene ne ranar sakamako? <br>
+  <span class="aya-num">19</span> Ranar da wani rai ba ya mallakar wa wani rai wani abu; kuma al'amari a ranar nan na Allah ne.
+</p>
+    </div>
+  </div>
+</div>
+<!-- takwir -->
+ <div id="surah-takwir" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-takwir'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('takwir.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratut Takwir</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        إِذَا الشَّمْسُ كُوِّرَتْ (١) وَإِذَا النُّجُومُ انْكَدَرَتْ (٢) وَإِذَا الْجِبَالُ سُيِّرَتْ (٣) وَإِذَا الْعِشَارُ عُطِّلَتْ (٤) وَإِذَا الْوُحُوشُ حُشِرَتْ (٥) وَإِذَا الْبِحَارُ سُجِّرَتْ (٦) وَإِذَا النُّفُوسُ زُوِّجَتْ (٧) وَإِذَا الْمَوْءُودَةُ سُئِلَتْ (٨) بِأَيِّ ذَنْبٍ قُتِلَتْ (٩) وَإِذَا الصُّحُفُ نُشِرَتْ (١٠) وَإِذَا السَّمَاءُ كُشِطَتْ (١١) وَإِذَا الْجَحِيمُ سُعِّرَتْ (١٢) وَإِذَا الْجَنَّةُ أُزْلِفَتْ (١٣) عَلِمَتْ نَفْسٌ مَا أَحْضَرَتْ (١٤) فَلَا أُقْسِمُ بِالْخُنَّسِ (١٥) الْجَوَارِ الْكُنَّسِ (١٦) وَاللَّيْلِ إِذَا عَسْعَسَ (١٧) وَالصُّبْحِ إِذَا تَنَفَّسَ (١٨) إِنَّهُ لَقَوْلُ رَسُولٍ كَرِيمٍ (١٩) ذِي قُوَّةٍ عِنْدَ ذِي الْعَرْشِ مَكِينٍ (٢٠) مُطَاعٍ ثَمَّ أَمِينٍ (٢١) وَمَا صَاحِبُكُمْ بِمَجْنُونٍ (٢٢) وَلَقَدْ رَآهُ بِالْأُفُقِ الْمُبِينِ (٢٣) وَمَا هُوَ عَلَى الْغَيْبِ بِضَنِينٍ (٢٤) وَمَا هُوَ بِقَوْلِ شَيْطَانٍ رَجِيمٍ (٢٥) فَأَيْنَ تَذْهَبُونَ (٢٦) إِنْ هُوَ إِلَّا ذِكْرٌ لِلْعَالَمِينَ (٢٧) لِمَنْ شَاءَ مِنْكُمْ أَنْ يَسْتَقِيمَ (٢٨) وَمَا تَشَاؤُونَ إِلَّا أَنْ يَشَاءَ اللَّهُ رَبُّ الْعَالَمِينَ (٢٩)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+<p class="hausa-text">
+  <span class="aya-num">1</span> Idan rana aka nade ta (aka bace haskenta). <br>
+  <span class="aya-num">2</span> Idan taurari suka zazzage. <br>
+  <span class="aya-num">3</span> Idan duwatsu aka tafiyar da su. <br>
+  <span class="aya-num">4</span> Idan rakuma masu ciki aka kyale su. <br>
+  <span class="aya-num">5</span> Idan namun daji aka tattara su. <br>
+  <span class="aya-num">6</span> Idan teku aka rurruka su da wuta. <br>
+  <span class="aya-num">7</span> Idan rayuka aka hada su (da abokan zamansu). <br>
+  <span class="aya-num">8</span> Idan yarinya wadda aka binne ta tana raye aka tambaye ta. <br>
+  <span class="aya-num">9</span> "Domin wanne zunubi ne aka kashe ta?" <br>
+  <span class="aya-num">10</span> Idan takardu aka shimfida su. <br>
+  <span class="aya-num">11</span> Idan sama aka kwashe ta. <br>
+  <span class="aya-num">12</span> Idan Jahannama aka rurruka ta. <br>
+  <span class="aya-num">13</span> Idan Aljanna aka kusanto da ita. <br>
+  <span class="aya-num">14</span> Kowane rai zai san abin da ya gabatar. <br>
+  <span class="aya-num">15</span> Don haka, ba sai Na yi rantsuwa da taurari masu boyewa ba. <br>
+  <span class="aya-num">16</span> Masu gudana kuma masu fakuawa. <br>
+  <span class="aya-num">17</span> Da dare idan ya yi gaba (ko ya yi rufi). <br>
+  <span class="aya-num">18</span> Da asuba idan ta yi numfashi (ta bayyana). <br>
+  <span class="aya-num">19</span> Lallai shi (Alkur'ani) maganar wani Manzo ne mai daraja (Jibrilu). <br>
+  <span class="aya-num">20</span> Ma'abucin karfi a wajen Ma'abucin Al'arshi, mai matsayi. <br>
+  <span class="aya-num">21</span> Wanda ake yi wa biyayya a can, amintacce. <br>
+  <span class="aya-num">22</span> Kuma abokin tafiyarku (Muhammad) ba mahaukaci ba ne. <br>
+  <span class="aya-num">23</span> Kuma lallai ya gani shi (Jibrilu) a sararin samaniya bayyananne. <br>
+  <span class="aya-num">24</span> Kuma shi (Manzo) ba marowaci ba ne a kan gaibu. <br>
+  <span class="aya-num">25</span> Kuma shi (Alkur'ani) ba maganar Shaidan jifaffe ba ne. <br>
+  <span class="aya-num">26</span> To, ina za ku nufa? <br>
+  <span class="aya-num">27</span> Shi ba wani abu ba ne face tunatarwa ga talikai. <br>
+  <span class="aya-num">28</span> Ga wanda ya so daga cikinku ya tsayu (a kan gaskiya). <br>
+  <span class="aya-num">29</span> Kuma ba ku nufin komai face idan Allah Ubangijin talikai Ya so.
+</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- abasa -->
+<div id="surah-abasa" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-abasa'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('abasa.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratu 'Abasa</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        عَبَسَ وَتَوَلَّى (١) أَنْ جَاءَهُ الْأَعْمَى (٢) وَمَا يُدْرِيكَ لَعَلَّهُ يَزَّكَّى (٣) أَوْ يَذَّكَّرُ فَتَنْفَعَهُ الذِّكْرَى (٤) أَمَّا مَنِ اسْتَغْنَى (٥) فَأَنْتَ لَهُ تَصَدَّى (٦) وَمَا عَلَيْكَ أَلَّا يَزَّكَّى (٧) وَأَمَّا مَنْ جَاءَكَ يَسْعَى (٨) وَهُوَ يَخْشَى (٩) فَأَنْتَ عَنْهُ تَلَهَّى (١٠) كَلَّا إِنَّهَا تَذْكِرَةٌ (١١) فَمَنْ شَاءَ ذَكَرَهُ (١٢) فِي صُحُفٍ مُكَرَّمَةٍ (١٣) مَرْفُوعَةٍ مُطَهَّرَةٍ (١٤) بِأَيْدِي سَفَرَةٍ (١٥) كِرَامٍ بَرَرَةٍ (١٦) قُتِلَ الْإِنْسَانُ مَا أَكْفَرَهُ (١٧) مِنْ أَيِّ شَيْءٍ خَلَقَهُ (١٨) مِنْ نُطْفَةٍ خَلَقَهُ فَقَدَّرَهُ (١٩) ثُمَّ السَّبِيلَ يَسَّرَهُ (٢٠) ثُمَّ أَمَاتَهُ فَأَقْبَرَهُ (٢١) ثُمَّ إِذَا شَاءَ أَنْشَرَهُ (٢٢) كَلَّا لَمَّا يَقْضِ مَا أَمَرَهُ (٢٣) فَلْيَنْظُرِ الْإِنْسَانُ إِلَى طَعَامِهِ (٢٤) أَنَّا صَبَبْنَا الْمَاءَ صَبًّا (٢٥) ثُمَّ شَقَقْنَا الْأَرْضَ شَقًّا (٢٦) فَأَنْبَتْنَا فِيهَا حَبًّا (٢٧) وَعِنَبًا وَقَضْبًا (٢٨) وَزَيْتُونًا وَنَخْلًا (٢٩) وَحَدَائِقَ غُلْبًا (٣٠) وَفَاكِهَةً وَأَبًّا (٣١) مَتَاعًا لَكُمْ وَلِأَنْعَامِكُمْ (٣٢) فَإِذَا جَاءَتِ الصَّاخَّةُ (٣٣) يَوْمَ يَفِرُّ الْمَرْءُ مِنْ أَخِيهِ (٣٤) وَأُمِّهِ وَأَبِيهِ (٣٥) وَصَاحِبَتِهِ وَبَنِيهِ (٣٦) لِكُلِّ امْرِئٍ مِنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ (٣٧) وُجُوهٌ يَوْمَئِذٍ مُسْفِرَةٌ (٣٨) ضَاحِكَةٌ مُسْتَبْشِرَةٌ (٣٩) وَوُجُوهٌ يَوْمَئِذٍ عَلَيْهَا غَبَرَةٌ (٤٠) تَرْهَقُهَا قَتَرَةٌ (٤١) أُولَئِكَ هُمُ الْكَفَرَةُ الْفَجَرَةُ (٤٢)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+<p class="hausa-text">
+  <span class="aya-num">1</span> Ya murtuke(fuska), ya kuma juya baya. <br>
+  <span class="aya-num">2</span> Saboda makaho ya zo masa. <br>
+  <span class="aya-num">3</span> Me ya sanar da kai, watakila shi zai tsarkaka? <br>
+  <span class="aya-num">4</span> Ko ya yi tunani, har tunatarwar ta amfane shi? <br>
+  <span class="aya-num">5</span> Amma wanda ya nuna wadata (ga musulunci). <br>
+  <span class="aya-num">6</span> To, kai kana fuskantar sa. <br>
+  <span class="aya-num">7</span> Alhali babu wani laifi a kanka idan bai tsarkaka ba. <br>
+  <span class="aya-num">8</span> Amma wanda ya zo maka yana gaggawa (neman shiriya). <br>
+  <span class="aya-num">9</span> Kuma shi yana jin tsoron Allah. <br>
+  <span class="aya-num">10</span> To, kai kana shagaltuwa daga gare shi. <br>
+  <span class="aya-num">11</span> A'a! Lallai ita (ayoyin) tunatarwa ce. <br>
+  <span class="aya-num">12</span> Saboda haka wanda ya so ya tuna shi. <br>
+  <span class="aya-num">13</span> A cikin wasu takardu masu daraja. <br>
+  <span class="aya-num">14</span> Madaukaka, tsarkakakku. <br>
+  <span class="aya-num">15</span> A hannun wasu marubuta (Mala'iku). <br>
+  <span class="aya-num">16</span> Masu daraja, masu bin Allah. <br>
+  <span class="aya-num">17</span> An tsine wa mutum (kafiri), yaya tsananin kafircinsa yake! <br>
+  <span class="aya-num">18</span> Daga mene ne (Allah) Ya halicce shi? <br>
+  <span class="aya-num">19</span> Daga digon maniyyi Ya halicce shi, sa'an nan Ya kintata shi. <br>
+  <span class="aya-num">20</span> Sa'an nan Ya saukaka masa hanya (fita daga ciki). <br>
+  <span class="aya-num">21</span> Sa'an nan Ya matar da shi, Ya sanya shi a kabari. <br>
+  <span class="aya-num">22</span> Sa'an nan idan Ya so, sai Ya tada shi. <br>
+  <span class="aya-num">23</span> A'a! Shi (mutum) bai idar da abin da Ya umarce shi ba. <br>
+  <span class="aya-num">24</span> To, sai mutum ya duba zuwa ga abincinsa. <br>
+  <span class="aya-num">25</span> Lallai Mun kwararo ruwa kwararowa. <br>
+  <span class="aya-num">26</span> Sa'an nan Mun tsattsaga kasa tsattsagewa. <br>
+  <span class="aya-num">27</span> Sa'an nan Mun fito da kwayoyi (na hatsi) a cikinta. <br>
+  <span class="aya-num">28</span> Da inabi da ganyaye. <br>
+  <span class="aya-num">29</span> Da zaitun da dabinai. <br>
+  <span class="aya-num">30</span> Da lambuna ma'abuta itatuwa masu yawa. <br>
+  <span class="aya-num">31</span> Da 'ya'yan itace da ciyawa. <br>
+  <span class="aya-num">32</span> Don jin dadinku da na dabbobinku. <br>
+  <span class="aya-num">33</span> To, idan babbar murya (ta kiyama) ta zo. <br>
+  <span class="aya-num">34</span> Ranar da mutum yake gudu daga dan'uwansa. <br>
+  <span class="aya-num">35</span> Da mahaifiyarsa da mahaifinsa. <br>
+  <span class="aya-num">36</span> Da matarsa da 'ya'yansa. <br>
+  <span class="aya-num">37</span> Kowane mutum daga cikinsu a ranar nan yana da wani al'amari da zai ishe shi. <br>
+  <span class="aya-num">38</span> Wasu huskoki a ranar nan masu annuri ne. <br>
+  <span class="aya-num">39</span> Masu dariya, masu bushara. <br>
+  <span class="aya-num">40</span> Kuma wasu huskoki a ranar nan akwai kura a kansu. <br>
+  <span class="aya-num">41</span> Bakar kura tana rufe su. <br>
+  <span class="aya-num">42</span> Wadancan su ne kafirai, fajirai.
+</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AN-NAZI'AT -->
+<div id="surah-naziat" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-naziat'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('naziat.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratun Nazi'at</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+        وَالنَّازِعَاتِ غَرْقًا (١) وَالنَّاشِطَاتِ نَشْطًا (٢) وَالسَّابِحَاتِ سَبْحًا (٣) فَالسَّابِقَاتِ سَبْقًا (٤) فَالْمُدَبِّرَاتِ أَمْرًا (٥) يَوْمَ تَرْجُفُ الرَّاجِفَةُ (٦) تَتْبَعُهَا الرَّادِفَةُ (٧) قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ (٨) أَبْصَارُهَا خَاشِعَةٌ (٩) يَقُولُونَ أَإِنَّا لَمَرْدُودُونَ فِي الْحَافِرَةِ (١٠) أَإِذَا كُنَّا عِظَامًا نَخِرَةً (١١) قَالُوا تِلْكَ إِذًا كَرَّةٌ خَاسِرَةٌ (١٢) فَإِنَّمَا هِيَ زَجْرَةٌ وَاحِدَةٌ (١٣) فَإِذَا هُمْ بِالسَّاهِرَةِ (١٤) هَلْ أَتَاكَ حَدِيثُ مُوسَى (١٥) إِذْ نَادَاهُ رَبُّهُ بِالْوَادِ الْمُقَدَّسِ طُوًى (١٦) اذْهَبْ إِلَى فِرْعَوْنَ إِنَّهُ طَغَى (١٧) فَقُلْ هَلْ لَكَ إِلَى أَنْ تَزَّكَّى (١٨) وَأَهْدِيَكَ إِلَى رَبِّكَ فَتَخْشَى (١٩) فَأَرَاهُ الْآيَةَ الْكُبْرَى (٢٠) فَكَذَّبَ وَعَصَى (٢١) ثُمَّ أَدْبَرَ يَسْعَى (٢٢) فَحَشَرَ فَنَادَى (٢٣) فَقَالَ أَنَا رَبُّكُمُ الْأَعْلَى (٢٤) فَأَخَذَهُ اللَّهُ نَكَالَ الْآخِرَةِ وَالْأُولَى (٢٥) إِنَّ فِي ذَلِكَ لَعِبْرَةً لِمَنْ يَخْشَى (٢٦) أَأَنْتُمْ أَشَدُّ خَلْقًا أَمِ السَّمَاءُ بَنَاهَا (٢٧) رَفَعَ سَمْكَهَا فَسَوَّاهَا (٢٨) وَأَغْطَشَ لَيْلَهَا وَأَخْرَجَ ضُحَاهَا (٢٩) وَالْأَرْضَ بَعْدَ ذَلِكَ دَحَاهَا (٣٠) أَخْرَجَ مِنْهَا مَاءَهَا وَمَرْعَاهَا (٣١) وَالْجِبَالَ أَرْسَاهَا (٣٢) مَتَاعًا لَكُمْ وَلِأَنْعَامِكُمْ (٣٣) فَإِذَا جَاءَتِ الطَّامَّةُ الْكُبْرَى (٣٤) يَوْمَ يَتَذَكَّرُ الْإِنْسَانُ مَا سَعَى (٣٥) وَبُرِّزَتِ الْجَحِيمُ لِمَنْ يَرَى (٣٦) فَأَمَّا مَنْ طَغَى (٣٧) وَآثَرَ الْحَيَاةَ الدُّنْيَا (٣٨) فَإِنَّ الْجَحِيمَ هِيَ الْمَأْوَى (٣٩) وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِ وَنَهَى النَّفْسَ عَنِ الْهَوَى (٤٠) فَإِنَّ الْجَنَّةَ هِيَ الْمَأْوَى (٤١) يَسْأَلُونَكَ عَنِ السَّاعَةِ أَيَّانَ مُرْسَاهَا (٤٢) فِيمَ أَنْتَ مِنْ ذِكْرَاهَا (٤٣) إِلَى رَبِّكَ مُنْتَهَاهَا (٤٤) إِنَّمَا أَنْتَ مُنْذِرُ مَنْ يَخْشَاهَا (٤٥) كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوا إِلَّا عَشِيَّةً أَوْ ضُحَاهَا (٤٦)
+      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+<p class="hausa-text">
+  <span class="aya-num">1</span> Ina rantsuwa da (Mala'iku) masu fizge rayuka da karfi. <br>
+  <span class="aya-num">2</span> Da masu zare rayuka cikin sauki. <br>
+  <span class="aya-num">3</span> Da masu ninkaya (a sararin samaniya) ninkaya. <br>
+  <span class="aya-num">4</span> Da masu rige-rige (wajen aiwatar da umarni) rige-rige. <br>
+  <span class="aya-num">5</span> Da masu shirya al'amuran (duniya). <br>
+  <span class="aya-num">6</span> Ranar da (busar farko) za ta girgiza komai. <br>
+  <span class="aya-num">7</span> (Busar) baya za ta biyo bayanta. <br>
+  <span class="aya-num">8</span> Zukata a ranar nan masu tsoro ne. <br>
+  <span class="aya-num">9</span> Ganinsu a kaskance yake. <br>
+  <span class="aya-num">10</span> Suna cewa: "Shin lallai za a mayar da mu yadda muke a da?" <br>
+  <span class="aya-num">11</span> "Ko da mun kasance kasusuwa ne rugujajju?" <br>
+  <span class="aya-num">12</span> Suka ce: "Wancan komawa ce ta asara." <br>
+  <span class="aya-num">13</span> To, ita tsawa daya ce kawai. <br>
+  <span class="aya-num">14</span> Sai gashi su duka a fili (na kiyama). <br>
+  <span class="aya-num">15</span> Shin labarin Musa ya zo maka? <br>
+  <span class="aya-num">16</span> Sa'ad da Ubangijinsa Ya kira shi a kwararo mai tsarki na Tuwa. <br>
+  <span class="aya-num">17</span> "Ka tafi zuwa ga Fir'auna, lallai shi ya ketare haddi." <br>
+  <span class="aya-num">18</span> "Sai ka ce: Shin kana da sha'awar ka tsarkaka?" <br>
+  <span class="aya-num">19</span> "Kuma in shiryar da kai zuwa ga Ubangijinka domin ka ji tsoronSa?" <br>
+  <span class="aya-num">20</span> Sai ya nuna masa aya mafi girma. <br>
+  <span class="aya-num">21</span> Sai ya karyata, ya kuma yi tawaye. <br>
+  <span class="aya-num">22</span> Sannan ya juya baya yana kokari (makirci). <br>
+  <span class="aya-num">23</span> Sai ya tattara (mutane), ya kira su. <br>
+  <span class="aya-num">24</span> Ya ce: "Ni ne Ubangijinku mafi daukaka." <br>
+  <span class="aya-num">25</span> Sai Allah Ya kama shi da azabar Lahira da ta duniya. <br>
+  <span class="aya-num">26</span> Lallai a cikin wancan akwai abin lura ga wanda yake tsoron Allah. <br>
+  <span class="aya-num">27</span> Shin ku ne kuka fi wahalar halitta ko sama da (Allah) Ya gina? <br>
+  <span class="aya-num">28</span> Ya daukaka samanta, sa'an nan Ya daidaita ta. <br>
+  <span class="aya-num">29</span> Ya kuma sanya darenta ya yi duhu, Ya fito da hantsinta. <br>
+  <span class="aya-num">30</span> Bayan haka kuma sai Ya shimfida kasa. <br>
+  <span class="aya-num">31</span> Ya fitar da ruwanta da makiyayarta daga gare ta. <br>
+  <span class="aya-num">32</span> Da duwatsu Ya kafasu daram. <br>
+  <span class="aya-num">33</span> Domin jin dadinku da na dabbobinku. <br>
+  <span class="aya-num">34</span> To, idan babban masifa (kiyama) ta zo. <br>
+  <span class="aya-num">35</span> Ranar da mutum zai tuna abin da ya aikata. <br>
+  <span class="aya-num">36</span> Kuma aka bayyana Jahannama ga mai kallo. <br>
+  <span class="aya-num">37</span> Amma wanda ya ketare haddi. <br>
+  <span class="aya-num">38</span> Ya kuma gwammace rayuwar duniya. <br>
+  <span class="aya-num">39</span> To, lallai Jahannama ita ce mazauninsa. <br>
+  <span class="aya-num">40</span> Amma wanda ya ji tsoron matsayin Ubangijinsa, ya kuma hana ransa bin son zuciya. <br>
+  <span class="aya-num">41</span> To, lallai Aljanna ita ce mazauninsa. <br>
+  <span class="aya-num">42</span> Suna tambayarka game da kiyama; yaushe ne aukuwarta? <br>
+  <span class="aya-num">43</span> Me kake da shi na ambaton lokacinta? <br>
+  <span class="aya-num">44</span> Zuwa ga Ubangijinka kawai karshenta yake. <br>
+  <span class="aya-num">45</span> Kai mai gargadi ne kawai ga wanda yake tsoron ta. <br>
+  <span class="aya-num">46</span> Kamar dai su a ranar da za su ganta, ba su zauna (a duniya) ba face yammaci daya ko hantsinta.
+</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- AN-NABA' (Daga Farko) -->
+<div id="surah-naba" class="hifz-card full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-naba'); playAudio('null')">×</div>
+  <div class="card__inner">
+    <div class="card-front sura-scroll">
+      <div class="audio--btn" onclick="event.stopPropagation(); playAudio('naba.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+      </div>
+      <h3 class="sura-title">Suratun Naba'i</h3>
+      <p class="arabic-text-full" dir="rtl">
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ <br>
+عَمَّ يَتَسَاءَلُونَ (١) عَنِ النَّبَإِ الْعَظِيمِ (٢) الَّذِي هُمْ فِيهِ مُخْتَلِفُونَ (٣) كَلَّا سَيَعْلَمُونَ (٤) ثُمَّ كَلَّا سَيَعْلَمُونَ (٥) أَلَمْ نَجْعَلِ الْأَرْضَ مِهَادًا (٦) وَالْجِبَالَ أَوْتَادًا (٧) وَخَلَقْنَاكُمْ أَزْوَاجًا (٨) وَجَعَلْنَا نَوْمَكُمْ سُبَاتًا (٩) وَجَعَلْنَا اللَّيْلَ لِبَاسًا (١٠) وَجَعَلْنَا النَّهَارَ مَعَاشًا (١١) وَبَنَيْنَا فَوْقَكُمْ سَبْعًا شِدَادًا (١٢) وَجَعَلْنَا سِرَاجًا وَهَّاجًا (١٣) وَأَنْزَلْنَا مِنَ الْمُعْصِرَاتِ مَاءً ثَجَّاجًا (١٤) لِنُخْرِجَ بِهِ حَبًّا وَنَبَاتًا (١٥) وَجَنَّاتٍ أَلْفَافًا (١٦) إِنَّ يَوْمَ الْفَصْلِ كَانَ مِيقَاتًا (١٧) يَوْمَ يُنْفَخُ فِي الصُّورِ فَتَأْتُونَ أَفْوَاجًا (١٨) وَفُتِحَتِ السَّمَاءُ فَكَانَتْ أَبْوَابًا (١٩) وَسُيِّرَتِ الْجِبَالُ فَكَانَتْ سَرَابًا (٢٠) إِنَّ جَهَنَّمَ كَانَتْ مِرْصَادًا (٢١) لِلطَّاغِينَ مَآبًا (٢٢) لَابِثِينَ فِيهَا أَحْقَابًا (٢٣) لَا يَذُوقُونَ فِيهَا بَرْدًا وَلَا شَرَابًا (٢٤) إِلَّا حَمِيمًا وَغَسَّاقًا (٢٥) جَزَاءً وِفَاقًا (٢٦) إِنَّهُمْ كَانُوا لَا يَرْجُونَ حِسَابًا (٢٧) وَكَذَّبُوا بِآيَاتِنَا كِذَّابًا (٢٨) وَكُلَّ شَيْءٍ أَحْصَيْنَاهُ كِتَابًا (٢٩) فَذُوقُوا فَلَنْ نَزِيدَكُمْ إِلَّا عَذَابًا (٣٠) إِنَّ لِلْمُتَّقِينَ مَفَازًا (٣١) حَدَائِقَ وَأَعْنَابًا (٣٢) وَكَوَاعِبَ أَتْرَابًا (٣٣) وَكَأْسًا دِهَاقًا (٣٤) لَا يَسْمَعُونَ فِيهَا لَغْوًا وَلَا كِذَّابًا (٣٥) جَزَاءً مِنْ رَبِّكَ عَطَاءً حِسَابًا (٣٦) رَبِّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الرَّحْمَنِ لَا يَمْلِكُونَ مِنْهُ خِطَابًا (٣٧) يَوْمَ يَقُومُ الرُّوحُ وَالْمَلَائِكَةُ صَفًّا لَا يَتَكَلَّمُونَ إِلَّا مَنْ أَذِنَ لَهُ الرَّحْمَنُ وَقَالَ صَوَابًا (٣٨) ذَلِكَ الْيَوْمُ الْحَقُّ فَمَنْ شَاءَ اتَّخَذَ إِلَى رَبِّهِ مَآبًا (٣٩) إِنَّا أَنْذَرْنَاكُمْ عَذَابًا قَرِيبًا يَوْمَ يَنْظُرُ الْمَرْءُ مَا قَدَّمَتْ يَدَاهُ وَيَقُولُ الْكَافِرُ يَا لَيْتَنِي كُنْتُ تُرَابًا (٤٠)      </p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARAR SURAR</div>
+<p class="hausa-text">
+  <span class="aya-num">1</span> Game da mene ne suke tambayar juna? <br>
+  <span class="aya-num">2</span> Game da babban labari (Kiyama). <br>
+  <span class="aya-num">3</span> Wanda suke saba wa juna a kansa. <br>
+  <span class="aya-num">4</span> A'a! Nan gaba kadan za su sani. <br>
+  <span class="aya-num">5</span> Sannan kuma a'a! Nan gaba kadan za su sani. <br>
+  <span class="aya-num">6</span> Shin ba Mu sanya kasa ta zama shimfida ba? <br>
+  <span class="aya-num">7</span> Da duwatsu su zama turaku (domin kago kasa)? <br>
+  <span class="aya-num">8</span> Kuma Mun halicce ku nau'i-nau'i (maza da mata). <br>
+  <span class="aya-num">9</span> Mun kuma sanya barcinku ya zama hutu. <br>
+  <span class="aya-num">10</span> Mun sanya dare ya zama sutura. <br>
+  <span class="aya-num">11</span> Mun kuma sanya rana ta zama lokacin neman abinci. <br>
+  <span class="aya-num">12</span> Mun kuma gina sammai bakwai masu karfi a samanku. <br>
+  <span class="aya-num">13</span> Mun sanya fitila (rana) mai tsananin haske da zafi. <br>
+  <span class="aya-num">14</span> Mun kuma sauko da ruwa mai kwarara daga gizagizai. <br>
+  <span class="aya-num">15</span> Domin Mu fitar da kwayoyi (na hatsi) da tsirrai. <br>
+  <span class="aya-num">16</span> Da lambuna masu sarkakiyar bishiyoyi. <br>
+  <span class="aya-num">17</span> Lallai ranar rarrabe (tsakanin kwarai da mummuna) lokaci ne sananne. <br>
+  <span class="aya-num">18</span> Ranar da za a busa kaho, sai ku zo gungun-gungun. <br>
+  <span class="aya-num">19</span> Aka bude sama ta zama kofofin kofofi. <br>
+  <span class="aya-num">20</span> Aka tafiyar da duwatsu suka zama kamar gizo-gizo. <br>
+  <span class="aya-num">21</span> Lallai Jahannama ta kasance tana jiran (kafirai). <br>
+  <span class="aya-num">22</span> Ga masu ketare haddi ita ce makoma. <br>
+  <span class="aya-num">23</span> Suna masu zama a cikinta shekaru marasa iyaka. <br>
+  <span class="aya-num">24</span> Ba za su dandani sanyi ba a cikinta, kuma ba za su dandani abin sha ba. <br>
+  <span class="aya-num">25</span> Sai dai ruwan zafi da jini da ruwan miki. <br>
+  <span class="aya-num">26</span> Sakamako ne da ya dace (da ayyukansu). <br>
+  <span class="aya-num">27</span> Lallai su sun kasance ba sa fatan lissafi. <br>
+  <span class="aya-num">28</span> Kuma suka karyata ayoyinmu karyatawa mai tsanani. <br>
+  <span class="aya-num">29</span> Kuma kowane abu Mun lissafa shi a cikin littafi. <br>
+  <span class="aya-num">30</span> (Za a ce musu): "Ku dandana, don haka ba za Mu kara muku komai ba face azaba." <br>
+  <span class="aya-num">31</span> Lallai masu tsoron Allah suna da wurin rabo (Aljanna). <br>
+  <span class="aya-num">32</span> Lambuna da inabbi. <br>
+  <span class="aya-num">33</span> Da 'yan mata masu tsaye-tsayen nono, tsara-tsara. <br>
+  <span class="aya-num">34</span> Da kofuna cike da abin sha. <br>
+  <span class="aya-num">35</span> Ba za su ji yasassar magana ba a cikinta, kuma ba za su ji karya ba. <br>
+  <span class="aya-num">36</span> Sakamako ne daga Ubangijinka, kyauta mai yawa. <br>
+  <span class="aya-num">37</span> Ubangijin sammai da kasa da abin da ke tsakaninsu, Mai rahama; ba su mallaki magana da Shi ba. <br>
+  <span class="aya-num">38</span> Ranar da Ruhu (Jibrilu) da Mala'iku za su tsaya sahu-sahu; babu mai magana sai wanda Mai rahama Ya yi masa izini, kuma ya fadi gaskiya. <br>
+  <span class="aya-num">39</span> Wancan ranar gaskiya ce; saboda haka wanda ya so ya nemi makoma zuwa ga Ubangijinsa. <br>
+  <span class="aya-num">40</span> Lallai Mun yi muku gargadi da azaba makusa; ranar da mutum zai duba abin da hannuwansa biyu suka gabatar, kafiri kuma zai ce: "Ina ma na kasance kasa!"
+</p>
+    </div>
+  </div>
+</div>
+
+<!-----infitar---->
+<div id="surah-infitar" class="hifz-card card-cyan full-sura">
+  <div class="close-btn" onclick="event.stopPropagation(); closeSurah('surah-infitar'); playAudio('null')">×</div>
+  <div class="card-inner">
+    <div class="card-front sura-scroll">
+      <div class="audio-btn" onclick="event.stopPropagation(); playAudio('infitar.aac')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+      </div>
+      <h3 class="sura-title">infitar</h3>
+       <p class="arabic-text-full" class="arabic-text" dir="rtl">
+         وَالسَّمَاءِ وَالطَّارِقِ (١) وَمَا أَدْرَاكَ مَا الطَّارِقُ (٢) النَّجْمُ الثَّاقِبُ (٣) إِنْ كُلُّ نَفْسٍ لَمَّا عَلَيْهَا حَافِظٌ (٤) فَلْيَنْظُرِ الْإِنْسَانُ مِمَّ خُلِقَ (٥) خُلِقَ مِنْ مَاءٍ دَافِقٍ (٦) يَخْرُجُ مِنْ بَيْنِ الصُّلْبِ وَالتَّرَائبِ (٧)</p>
+    </div>
+    <div class="card-back sura-scroll">
+      <div class="translation-header">FASSARA</div>
+      <p class="hausa-text"> ------------------------------------------------------    </p>
+    </div>
+  </div>
+</div>
 
 
     </section>
 
   </main>
-
-  <!-- BADGE SECTION -->
-  <section class="badge-section">
-    <div class="medal">🏆</div>
-    <h2 class="badge-text">Gwarzon Mataki Na 1</h2>
-    <p style="color: #8b949e; margin-top: 10px;">Danna lambar yabo don jin sakamakon ka!</p>
-  </section>
-
-
+  <!-- Sidebar din yan gayu -->
+<
   <!-- 3. Footer -->
-  <footer>
-    <p>&copy; 2026 Manhajar Hadda. Designed with Dan-Abbas Cube Logic.</P>
-  </footer>
+  <footer class="app-footer" style="border-radius: 20px 20px 0 0;">
+    <p>&copy; 2026 Manhajar Hadda. Designed with <span style="color: var(--gold);">Dan-Abbas Cube Logic</span>.</p>
+</footer>
+</div>
 
-
-  <!-- AUDIO ELEMENTS -->
-  <audio id="clap-sound" preload="auto">
-    <source src="Dua.mp3" type="audio/mpeg">
-  </audio>
-
-  <!-- INTERACTIVE JAVASCRIPT -->
+  <!-- INTERACTIVE JAVASCRIPT ---- -- INTERACTIVE JAVASCRIPT --  -- INTERACTIVE JAVASCRIPT --  -- INTERACTIVE JAVASCRIPT -->
   <script>
+const sidebar = {
+    get el() { return document.getElementById('multimedia-sidebar'); },
+    get video() { return document.getElementById('aya-video'); },
+    get caption() { return document.getElementById('video-caption'); },
+    get overlay() { return document.getElementById('sidebar-overlay'); }, // Sabo
+
+    open(videoSrc, text) {
+        if (this.el && this.video) {
+            this.video.src = videoSrc;
+            this.caption.textContent = text;
+            
+            // Bude sidebar da overlay lokaci daya
+            this.el.classList.add('is-active');
+            this.overlay.classList.add('is-active');
+            
+            this.video.load();
+            this.video.play().catch(e => console.log("Play blocked"));
+        }
+    },
+
+    close() {
+        if (this.el) {
+            this.el.classList.remove('is-active');
+            this.overlay.classList.remove('is-active'); // Rufe overlay
+            this.video.pause();
+            this.video.src = "";
+        }
+    }
+};
+
+
+
+// Yadda zaka kira shi a jikin Aya (Trigger)
+// <span onclick="sidebar.open('video1.mp4', 'Fassaran aya ta kaza...')">1</span>
+
+
+    <!-- madel cup -->
     const medal = document.querySelector('.medal');
     const clap = document.getElementById('clap-sound');
 
@@ -560,7 +1726,6 @@
         // Kunna tafi
         clap.currentTime = 0;
         clap.play();
-
         // Murna (Alert)
         setTimeout(() => {
           alert("🎉 Masha Allah! Kai ne Gwarzon Makon Nan! 🎉");
@@ -573,7 +1738,7 @@
         }, 300);
       });
     }
-
+// ------------------------ flipped card -->
     // Scroll reveal logic (Optional - simple version)
     window.addEventListener('scroll', () => {
       const cards = document.querySelectorAll('.hifz-card');
@@ -586,9 +1751,8 @@
       });
     });
 
-
+// -------------------audio play----------------
     let currentAudio = null;
-
     function playAudio(url) {
       // 1. Idan akwai wani sautin da yake tashi, mu tsayar da shi
       if (currentAudio) {
@@ -599,11 +1763,65 @@
       currentAudio = new Audio(url);
       currentAudio.play();
 
-      // 3. (Kure Zamani): Saka wa katin "Glow" yayin da karatun ke tashi
       console.log("Karatun aya yana tashi...");
     }
+    /*--------------------------------------close x botton-------------------------------------------, */
+    function closeSurah(id) {
+    let card = document.getElementById(id);
+    if (card) {
+        card.style.display = 'none';
+        card.classList.remove('flipped'); // Don ya koma gaba idan an sake budewa
+        
+        // Dawo da mutum sama gurin grid din surori cikin santsi
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}
 
-  </script>
+
+  // general flipping --------------------------------------
+// Dauko duka katunnan
+let dukaKatunnan = document.querySelectorAll(".hifz-card");
+
+dukaKatunnan.forEach(function(kati) {
+    kati.addEventListener("click", function(event) {
+        // 1. Idan mutum ya danna gurin sauti (audio--btn), kar katin ya juya
+        if (event.target.closest('.audio--btn')) {
+            return; 
+        }
+        
+        // 2. Juyar da katin (Toggle flipped class)
+        kati.classList.toggle("flipped");
+        
+        console.log("Katin ya juya zuwa: " + (kati.classList.contains('flipped') ? 'Baya' : 'Gaba'));
+    });
+});
+
+
+
+// ----------------------- hidden sura and show id -----------------------
+function showSurah(id) {
+    // 1. Boye duka katuna
+    document.querySelectorAll('.hifz-card').forEach(card => {
+        card.style.display = 'none';
+        card.classList.remove('flipped'); // Dawo da katin fuskar gaba idan an canza sura
+    });
+
+    // 2. Nemo ID mai suna 'surah-' + id
+    let targetId = 'surah-' + id;
+    let selectedSurah = document.getElementById(targetId);
+    
+    if (selectedSurah) {
+        selectedSurah.style.display = 'block'; 
+        
+        // Dan jira kadan kafin scroll don katin ya riga ya fito
+        setTimeout(() => {
+            selectedSurah.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+    } else {
+        console.error("Ban samu ID mai suna " + targetId + " ba. Duba ID dinka a HTML!");
+    }
+}
+</script>
 
 </body>
 

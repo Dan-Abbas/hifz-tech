@@ -76,9 +76,7 @@
     opacity: 0.8;
     text-transform: uppercase;
 }
-
-/* 4. Animations */
-@keyframes juyawa {
+@keyframes juyawa { /* ----------------------------------Loader Animations------------------------------------ */
     from {
         transform: rotate(0deg);
     }
@@ -110,10 +108,7 @@
     }
 }
 
-
-
-/* 1. Tsarin Gaba Daya (General Setup) */
-* {
+* {/* ----------------------------------General Setup------------------------------------ */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -131,9 +126,25 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
+/* Babban Container */
+.app-container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+  grid-template-columns: 1fr ; /* Sidebar tana da 330px */
+  grid-template-rows: 60px 1fr 40px; /* Header da Footer heights */
+}
 
-/* 2. Glassmorphism Navbar (Kamar Gilashi) */
-/* 3. MODERN FLOATING NAVBAR */
+/* Sanya kowane bangare a mazauninsa */
+.app-header { grid-area: header; position: sticky; top: 15px; z-index: 100; }
+.app-main   { grid-area: main; overflow-y: auto; scrollbar-width: none; padding: 20px; }
+.app-sidebar { grid-area: sidebar; border-left: 1px solid rgba(255,255,255,0.1); }
+.app-footer { grid-area: footer; text-align: center; font-size: 0.8rem; }
+
+
 header {
     position: sticky;
     top: 15px;
@@ -274,19 +285,92 @@ main {
 
 }
 
-.card-section {
-    display: flex;
-    flex-wrap: wrap;
+.surah-grid-container {/* ----------------------------------grid css---------------------- */
+
+    display: block;
     justify-content: center;
     gap: 30px;
     padding: 20px 5% 60px;
+    padding: 20px;
+    text-align: center;
 
 }
 
+.grid-title {
+    color: var(--main);
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
 
-/* Gyara Girman Katin domin ya dauki sura daya * Gyara Girman Katin domin ya dauki sura daya  Gyara Girman Katin domin ya dauki sura daya */
+.surah-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-.sura-scroll {
+.surah-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.surah-item:hover {
+    background: var(--main);
+    color: black;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(63, 185, 80, 0.4);
+}
+
+/* 2. Salon kowane Button (Chip) */
+.surah-chip {
+    background: rgba(255, 255, 255, 0.05); /* Kalar glassmorphism */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 50px;       /*zagayayyu (Capsule style) */
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+    white-space: nowrap;      /* Don rubutu kar ya karye */
+}
+
+
+.surah-chip:hover {
+    background: var(--main);   /* Green dinmu */
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(63, 185, 80, 0.4);
+    border-color: var(--main);
+}
+
+/* 4. Active State: Idan mutum ya danna */
+.surah-chip:active {
+    transform: scale(0.95);
+}
+/* ----------------------------------main section---------------------- */
+
+.card-section {
+    position: relative;
+    display: flex; 
+    height: 35vw;
+
+    flex-direction: column; /* Su jera a tsaye */
+    align-items: center;    /* Su dawo tsakiya */
+    width: 100%;
+    gap: 20px;
+}
+.sura-scroll {/*--------------------------------------card setup-------------------------------------------, */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -329,8 +413,9 @@ main {
 }
 
 .hifz-card.full-sura {
-    width: 90%;
-    height: 200px;
+
+    height: auto;       /* Kar a sa fixed height */
+    min-height: 250px;  /* Amma kar ya gaza haka */
 }
 
 .arabic-text-full {
@@ -345,6 +430,8 @@ main {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    height: auto;       /* Kar a sa fixed height */
+    min-height: 250px;  /* Amma kar ya gaza haka */
 }
 
 .sura-scroll {
@@ -360,19 +447,21 @@ main {
     margin-top: 10px;
     text-transform: uppercase;
 }
-
-/* Gyara Girman Katin domin ya dauki sura daya * Gyara Girman Katin domin ya dauki sura daya  Gyara Girman Katin domin ya dauki sura daya */
-
 /* 3. The 3D Cyber-Card */
-.hifz-card {
-    width: 350px;
-    height: 200px;
+.hifz-card{
+    position: relative;
+    width: 90%;   
+    max-width: 600px;      /* Ya tsaya a nan a computer */
+    flex-shrink: 0; 
+    margin: 20px auto; 
+    height: auto;
+    min-height: 250px; 
     perspective: 1000px;
     /* Hangen nesa na 3D */
     animation: fadeInUp 0.8s ease-out forwards;
+    display: none;
 }
 
-/* 2. "Floating" Animation na Katuna */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -387,10 +476,10 @@ main {
 
 
 /* card inner iphone style */
-.card-inner {
+.card__inner {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width:auto;
+    height: auto;
     display: flex;
     position: relative;
     transform-style: preserve-3d;
@@ -399,26 +488,18 @@ main {
     gap: 5px;
 }
 
-.hifz-card .card-inner {
+.hifz-card.flipped .card__inner {
     transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.55);
-}
-
-.hifz-card:active .card-inner {
-    transform: scale(0.95) rotateY(180deg);
-    /* Katin zai ɗan matse (press effect) */
-}
-
-
-.hifz-card:hover .card-inner {
     transform: rotateY(180deg);
-    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .card-front,
 .card-back {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     backface-visibility: hidden;
     /* Boye dayan bangon idan an juya */
     display: flex;
@@ -438,11 +519,10 @@ main {
     background: black;
     border: 2px solid var(--main);
 }
-
-.audio-btn {
+.audio--btn {/*--------------------------------------svg botton-------------------------------------------, */
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 8px;
+    right: 8px;
     width: 35px;
     height: 35px;
     background: rgba(255, 255, 255, 0.05); /* Glass effect */
@@ -458,17 +538,41 @@ main {
     color: var(--main); /* Kalar Green dinmu */
 }
 
-.audio__btn svg {
+.audio--btn svg {
+    padding: 2px;
     width: 18px;
     height: 18px;
 }
-
-/* Idan aka taba ta (Hover) */
-.audio__btn:hover {
+.audio--btn:hover {
     background: var(--main);
     color: #000;
     transform: scale(1.2) rotate(5deg);
     box-shadow: 0 0 15px var(--main);
+}
+.close-btn {/*--------------------------------------close x botton-------------------------------------------, */
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 33px;
+    height: 33px;
+    background: var(--red); /* Ko kalar da kake so */
+    color: var(--main2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(42, 250, 70, 0.5);
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+    background: var(--main2);
+    color: var(--red);
 }
 
 
@@ -493,7 +597,7 @@ main {
 
 
 
-.arabic-text {
+.arabic-text {/*--------------------------------------Arabic clip text-------------------------------------------, */
     font-family: 'Amiri', serif;
     /* 2. Girman Rubutu */
     font-size: clamp(1.7rem, 4vw, 1.8rem);
@@ -698,82 +802,94 @@ footer {
     bottom: 0;
     width: 100%;
 }
+                   /*=======================================================
+                      RESPONSIVE DESIGN (MEDIA QUERIES)
+                     ======================================================= */
 
-
-/* Media Query don Wayoyi (Phones) */
-@media (max-width: 600px) {
-
-    /* 1. Maida babban katin ya zama 90% na fadin wayar */
-    .hifz-card,
-    .hifz-card.full-sura {
-        width: 95% !important;
-        height: auto;
-        min-height: 250px;
-        /* Don rubutu ya samu wuri */
-        margin: 0 auto;
+/* 1. TABLETS & SMALL LAPTOPS (Kasa da 992px) */
+@media (max-width: 992px) {
+    header {
+        padding: 0 5%;
     }
-
-    /* 2. Rage girman rubutun Larabci a waya */
-    .arabic-text {
-        font-size: 1.4rem !important;
-        line-height: 1.6;
+    
+    .modern-nav {
+        padding: 10px 30px;
     }
-
-    .arabic-text-full {
-        font-size: 1.1rem !important;
-        line-height: 1.8;
-        padding: 10px;
-    }
-
-    /* 3. Rage girman fassarar Hausa */
-    .hausa-text {
-        font-size: 0.85rem !important;
-    }
-
-    /* 4. Rage sararin Padding na Main */
-    .card-section {
-        padding: 20px 10px;
-        gap: 20px;
-    }
-
-    /* 5. Gyaran Hero Text a waya */
+    
     .hero-text h1 {
-        font-size: 1.8rem !important;
+        font-size: 3rem;
     }
 }
 
-@media (max-width: 600px) {
-
-    /* 1. Maida Navbar ta zama mai sauki a waya */
+/* 2. MOBILE PHONES (Kasa da 768px) - Mafi Muhimmanci */
+@media (max-width: 768px) {
+    /* Navbar: Boye Links, bar Logo da Button shiga kawai */
+    .nav-links li:not(:last-child) {
+        display: none; 
+    }
+    
     .modern-nav {
-        flex-direction: column;
-        /* Links su koma kasa da Logo */
-        gap: 15px;
-        padding: 10px;
-        border-radius: 20px;
-        /* Rage zagayen fadin sa */
-        width: 100%;
+        padding: 10px 20px;
+        top: 10px;
     }
 
-    /* 2. Gyara girman Logo a waya */
+    .hero-text {
+        padding: 60px 15px 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+     .surah-grid {
+        /* Wannan layin zai raba su guda 5 tabbatattu */
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 8px; /* Mun rage sararin tsakani don su samu wuri */
+        padding: 5px;
+    }
+
+    .surah-chip {
+        padding: 8px 5px; /* Rage fadin ciki */
+        font-size: 13px;   /* Rage girman rubutu don sunayen su shiga */
+        border-radius: 10px; /* rage zagayen don su fi zama a fili */
+        text-align: center;
+        letter-spacing: 0; /* cire sararin haruffa */
+    }
+    /* Katunan Surori: Su cika allon waya */
+    .hifz-card {
+        display: block;
+        width: 100%;
+        max-width: 380px;
+        height: 250px; /* Mun dan kara tsayi kadan don waya */
+    }
+
+    .arabic-text-full {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+    
+    .hausa-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* 3. VERY SMALL PHONES (Kasa da 480px) */
+@media (max-width: 480px) {
     .logo-text {
-        font-size: 1.2rem !important;
+        font-size: 1.2rem;
     }
 
-    /* 3. Gyara Links su jere a tsakiya cikin nutsuwa */
-    .nav-links {
-        gap: 10px;
-        width: 100%;
-        justify-content: center;
+    .hero-text h1 {
+        font-size: 1.8rem;
     }
 
-    .nav-links a {
-        font-size: 0.8rem !important;
+    .surah-grid {
+        grid-template-columns: repeat(2, 1fr); /* Layi biyu kacal */
     }
-
-    .btn-contact {
-        display: none !important;
-    }
-
-
 }
